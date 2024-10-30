@@ -1,3 +1,123 @@
+class PrestigeHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+       
+        <nav>
+            <div class="logo">Prestige</div>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <a class="home-link" href="elegant.html">Home</a> 
+                <a href="#about">About</a>
+                <!-- Dropdown for Services -->
+                <div class="dropdown">
+                    <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="business-travel.html">Business Travel</a>
+                        <a href="planning-agendas.html">Planning Agendas</a>
+                        <a href="luxury-conceirge.html">Luxury Concierge</a>
+                        <a href="personalized-assistance.html">Personalized Assistance</a>
+                        <a href="multilingual-assistance.html">Multilingual Support</a>
+                    </div>
+                </div>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        `
+    }
+}
+
+
+class PrestigeFooter extends HTMLElement{
+    connectedCallback() {
+        this.innerHTML = 
+        `
+        <footer class="bg-dark text-light pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Info 
+                    <div class="col-md-4 mb-4">
+                        <h5 class="fw-bold mb-3">Have a Question?</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>502 Palms Drive Ayi Mensah Park, Accra, Ghana</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2"></i>+233558766567</li>
+                            <li class="mb-2"><i class="fas fa-envelope me-2"></i><a href="mailto:sandrine.agbcompta@gmail.com" class="text-light text-decoration-none">sandrine.agbcompta@gmail.com</a></li>
+                        </ul>
+                    </div>
+                -->
+
+                    <!-- Contact Info -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="fw-bold mb-3">Have a Question?</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><span class="fas fa-map-marker-alt"></span><span class="text-light">502 Palms Drive Ayi Mensah Park, Accra, Ghana</span></li>
+                            <li class="mb-2"><span class="fas fa-phone"></span><span class="text-light">+233558766567</span></li>
+                            <li class="mb-2"><span class="fas fa-envelope"></span><a href="mailto:sandrine.agbcompta@gmail.com" class="text-light text-decoration-none">sandrine.agbcompta@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-4 mb-4 offset-md-1">
+                        <h5 class="fw-bold mb-3">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">About</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Services</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Social Media -->
+                    <div class="col-md-3 mb-4 text-center text-md-start">
+                        <h5 class="fw-bold mb-3">Connect With Us</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-light"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <hr class="bg-light">
+        
+                <!-- Copyright -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="mb-0">Copyright © All rights reserved | Designed by <a href="#" class="text-decoration-underline text-light fw-bold">WisdomFromAbove Designs</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        `
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class SpecialHeader extends HTMLElement{
     connectedCallback() {
         this.innerHTML = 
@@ -118,5 +238,7 @@ class SpecialFooter extends HTMLElement{
     }
 } 
 
+customElements.define('prestige-header', PrestigeHeader);
+customElements.define('prestige-footer', PrestigeFooter);
 customElements.define('special-header', SpecialHeader);
 customElements.define('special-footer', SpecialFooter);
