@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prestige Business Travel</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
@@ -117,55 +119,7 @@
             margin-right: auto;
         }
 
-        /* Custom Dropdown Styling */
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-toggle {
-            cursor: pointer;
-            padding: 0 20px;
-            color: var(--text-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .dropdown-menu {
-            display: none; /* Hide dropdown by default */
-            position: absolute;
-            top: 100%;
-            left: 0;
-            min-width: 200px;
-            background-color: var(--color-1);
-            border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            z-index: 1000;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-
-        /* Show dropdown on hover */
-        .dropdown:hover .dropdown-menu {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .dropdown-item {
-            padding: 10px 20px;
-            color: #fff;
-            text-decoration: none;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .dropdown-item:hover {
-            background-color: var(--accent-color);
-            color: var(--color-1);
-        }
-
-
+       
         /* About section styling */
         #about {
             background-color: var(--color-1);
@@ -858,6 +812,18 @@
         </div>
     </footer>
 
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+    <!-- Font Awesome Icons (for icons in the footer) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS for Scroll Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
