@@ -25,13 +25,13 @@
     <style>
         :root{
             --color-1: #111;
-            --text-color: #f0f0f0;
-            --accent-color: #DAA520;
-            --white-color: hsl(170, 12%, 98%);
-            --gray-color: hsl(170, 4%, 60%);
-            --black-color: hsl(170, 12%, 8%);
-            --body-font: "Bona Nova", serif;
-            --normal-font-size: .938rem;
+            --text-color: #f0f0f0 !important;
+            --accent-color: #DAA520 !important;
+            --white-color: hsl(170, 12%, 98%) !important;
+            --gray-color: hsl(170, 4%, 60%) !important;
+            --black-color: hsl(170, 12%, 8%) !important;
+            --body-font: "Bona Nova", serif!;
+            --normal-font-size: .938rem !important;
         }
 
         @media screen and (min-width: 1120px) {
@@ -47,7 +47,7 @@
             margin: 0;
             /*font-family: 'Arial', sans-serif;*/
             font-family: var(--body-font);
-            background-color: var(--color-1);
+            background-color: var(--color-1) !important;
             color: #fff;
             scroll-behavior: smooth;
             transition: background-color 0.3s ease;
@@ -119,10 +119,65 @@
             margin-right: auto;
         }
 
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Button inside the dropdown */
+        .dropdown .dropbtn {
+            color: var(--text-color);
+            background: none;
+            padding: 0 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--color-1);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: var(--accent-color);
+            color: var(--color-1);
+        }
+
+        /* Show dropdown on hover (for desktop) */
+        @media (min-width: 768px) {
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        }
+
+
        
         /* About section styling */
         #about {
-            background-color: var(--color-1);
+            background-color: var(--color-1) !important;
             color: var(--text-color);
         }
 
@@ -162,7 +217,7 @@
                 right: -100%;
                 z-index: 10;
                 width: 300px;
-                background-color: var(--color-1);
+                background-color: var(--color-1) !important;
                 box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
                 transition: right 0.75s ease-out;
             }
@@ -559,7 +614,14 @@
             <a class="home-link" href="">Home</a> 
             <a href="#about">About</a>
             <!-- Dropdown for Services -->
-            <a href="#services">Services</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -708,7 +770,7 @@
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="d-flex flex-column align-items-center">
                         <i class="fas fa-phone fa-2x mb-3" style="color: gray;"></i>
-                        <h5 class="fw-bold">Phone:</h5>
+                        <h5 class="fw-bold text-light">Phone:</h5>
                         <p class="text-white-50" style="font-weight: 500;">+233 558 766 567</p>
                     </div>
                 </div>
@@ -720,7 +782,7 @@
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
                     <div class="d-flex flex-column align-items-center">
                         <i class="fas fa-envelope fa-2x mb-3" style="color: gray;"></i>
-                        <h5 class="fw-bold">Email:</h5>
+                        <h5 class="fw-bold text-light">Email:</h5>
                         <p class="text-white" style="font-weight: 500;">
                             <a href="mailto:sandrine.agbcompta@gmail.com" class="text-decoration-none text-white-50">sandrine.agbcompta@gmail.com</a>
                         </p>
@@ -767,9 +829,9 @@
                 <div class="col-md-4 mb-4">
                     <h5 class="fw-bold mb-3">Have a Question?</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><span class="fas fa-map-marker-alt"></span><span class="p-4 text-light">502 Palms Drive Ayi Mensah Park, Accra, Ghana</span></li>
-                        <li class="mb-2"><span class="fas fa-phone"></span><span class="p-4 text-light">+233558766567</span></li>
-                        <li class="mb-2"><span class="fas fa-envelope"></span><a href="mailto:sandrine.agbcompta@gmail.com" class="text-light text-decoration-none p-4">sandrine.agbcompta@gmail.com</a></li>
+                        <li class="mb-2"><span class="fas fa-map-marker-alt"></span><span class="text-light">502 Palms Drive Ayi Mensah Park, Accra, Ghana</span></li>
+                        <li class="mb-2"><span class="fas fa-phone"></span><span class="text-light">+233558766567</span></li>
+                        <li class="mb-2"><span class="fas fa-envelope"></span><a href="mailto:sandrine.agbcompta@gmail.com" class="text-light text-decoration-none">sandrine.agbcompta@gmail.com</a></li>
                     </ul>
                 </div>
 
@@ -777,7 +839,7 @@
                 <div class="col-md-4 mb-4 offset-md-1">
                     <h5 class="fw-bold mb-3">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-light c text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
                         <li class="mb-2"><a href="#" class="text-light text-decoration-none">About</a></li>
                         <li class="mb-2"><a href="#" class="text-light text-decoration-none">Services</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
@@ -832,6 +894,27 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>  
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector('.dropdown');
+            const dropdownContent = document.querySelector('.dropdown-content');
+            const dropbtn = document.querySelector('.dropbtn');
+    
+            // Toggle dropdown on click
+            dropbtn.addEventListener('click', function(event) {
+                event.stopPropagation(); // Prevent the click from closing immediately
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+            });
+    
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!dropdown.contains(event.target)) {
+                    dropdownContent.style.display = 'none';
+                }
+            });
+        });
+    </script>
     
 
 </body>
