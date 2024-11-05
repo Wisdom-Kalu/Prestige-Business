@@ -593,11 +593,92 @@
             color: #DAA520;
         }
 
+        /*new card */
+        .new_wrapper{
+            padding: 10px 10%;
+        }
+        #card-area{
+            padding: 50px 0;
+        }
+        .new_box-area{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+        .new_box {
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        }
+        .new_box img{
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.5s;
+        }
+        .new_overlay {
+            width: 100%;
+            height: 31%;
+            background: linear-gradient(transparent,#1c1c1c 58%);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            text-align: center;
+            font-size: 14px;
+            transition: height 0.5s;
+        }
+        .new_overlay h3 {
+            font-weight: 500;
+            margin-bottom: 5px;
+            margin-top: 80%;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: var(--text-color);
+        }
+
+        .new_overlay a {
+            margin-top: 10px;
+            color: #262626;
+            text-decoration: none;
+            font-size: 14px;
+            background: #fff;
+            border-radius: 50px;
+            text-align: center;
+            padding: 5px 15px;
+        }
+        .new_box:hover img{
+            transform: scale(1.1);
+        }
+        .new_box:hover .new_overlay{
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .new_overlay {
+                height: 50%;
+            }
+        }
+
+
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
+    <div class="container">
+        <div>Hello world</div>
+    </div>
+
     <prestige-header></prestige-header>
 
     <!-- Hero Section with Slider -->
@@ -663,61 +744,49 @@
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-dark">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Our Services</h2>
-            <div class="row">
-                <!-- Service 1 -->
-                <div class="col-lg-4 col-md-6 col-sm-6 text-center service-item" data-aos="fade-up" data-aos-delay="100">
-                    <a href="business-travel.html" class="service-link">
-                        <img src="images/sitting.jpg" alt="Transportation" loading="lazy">
-                        <div class="overlay">
-                            <div class="text">Business Travel Organization</div>
+        <div id="new_card-area">
+            <div class="new_wrapper">
+                <div class="new_box-area container">
+                    <div class="new_box">
+                        <img alt="" src="images/sitting.jpg">
+                        <div class="new_overlay">
+                            <h3>Business Travel Organization</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
                         </div>
-                    </a>
-                </div>
-    
-                <!-- Service 2 -->
-                <div class="col-md-6 col-lg-4 col-sm-6 text-center service-item" data-aos="fade-up" data-aos-delay="200">
-                    <a href="planning-agendas.html" class="service-link">
-                        <img src="images/sitting.jpg" alt="Tailor Made" loading="lazy">
-                        <div class="overlay">
-                            <div class="text">Planning Professional Agendas</div>
+                    </div>
+                    <div class="new_box">
+                        <img alt="" src="images/sitting.jpg">
+                        <div class="new_overlay">
+                            <h3>Planning Professional Agendas</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
                         </div>
-                    </a>
-                </div>
-    
-                <!-- Service 3 -->
-                <div class="col-md-6 col-lg-4 col-sm-6 text-center service-item" data-aos="fade-up" data-aos-delay="300">
-                    <a href="luxury-conceirge.html" class="service-link">
-                        <img src="images/sitting.jpg" alt="Concierge" loading="lazy">
-                        <div class="overlay">
-                            <div class="text">Luxury Concierge Services</div>
+                    </div>
+                    <div class="new_box">
+                        <img alt="" src="images/sitting.jpg">
+                        <div class="new_overlay">
+                            <h3>Luxury Concierge Services</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
                         </div>
-                    </a>
-                </div>
-    
-                <!-- Service 4 -->
-                <div class="col-md-6 col-lg-4 col-sm-6 service-item" data-aos="fade-up" data-aos-delay="400">
-                    <a href="personalized-assistance.html" class="service-link">
-                        <img src="images/sitting.jpg" alt="Business" loading="lazy">
-                        <div class="overlay">
-                            <div class="text">Personalized Assistance</div>
+                    </div>
+                    <div class="new_box">
+                        <img alt="" src="images/sitting.jpg">
+                        <div class="new_overlay pt-4">
+                            <h3>Personalized Assistance</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
                         </div>
-                    </a>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="col-md-6 col-lg-4 col-sm-6 service-item" data-aos="fade-up" data-aos-delay="400">
-                    <a href="multilingual-assistance.html" class="service-link">
-                        <img src="images/sitting.jpg" alt="Business" loading="lazy">
-                        <div class="overlay">
-                            <div class="text">Multilingual Support</div>
+                    </div>
+                    <div class="new_box">
+                        <img alt="" src="images/sitting.jpg">
+                        <div class="new_overlay pt-4">
+                            <h3>Multilingual Support</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     
     <!--Contact Section-->
