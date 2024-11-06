@@ -2,7 +2,7 @@ class PrestigeHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
        
-        <nav>
+        <nav class="navbar">
             <div class="logo">Prestige</div>
             <input type="checkbox" id="sidebar-active">
             <label for="sidebar-active" class="open-sidebar-button">
@@ -16,14 +16,16 @@ class PrestigeHeader extends HTMLElement {
                 <a class="home-link" href="elegant.html">Home</a> 
                 <a href="#about">About</a>
                 <!-- Dropdown for Services -->
-                <div class="dropdown">
-                    <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                        <a href="business-travel.html">Business Travel</a>
-                        <a href="planning-agendas.html">Planning Agendas</a>
-                        <a href="luxury-conceirge.html">Luxury Concierge</a>
-                        <a href="personalized-assistance.html">Personalized Assistance</a>
-                        <a href="multilingual-assistance.html">Multilingual Support</a>
+                <div class="d">
+                    <button class="d-btn">Services</button>
+                    <div class="d-content">
+                        <div class="column">
+                            <a href="">Planning Professional Agendas</a>
+                            <a href="">Planning Professional Agendas</a>
+                            <a href="">Planning Professional Agendas</a>
+                            <a href="">Planning Professional Agendas</a>
+                            <a href="">Planning Professional Agendas</a>
+                        </div>
                     </div>
                 </div>
                 <a href="#contact">Contact</a>

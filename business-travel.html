@@ -7,432 +7,125 @@
     <title>Our Services - Prestige Business Travel</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/services.css">
     <style>
-        :root {
-            --color-1: #111;
-            --text-color: #f0f0f0;
-            --accent-color: #DAA520;
-        }
-
-        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        /*
-        html {
-            font-family: "Montserrat";
-        }*/
-
-        body {
-            /*font-family: 'Arial', sans-serif;*/
-            font-family: 'Montserrat';
-            background-color: var(--color-1);
-            color: #fff;
-            scroll-behavior: smooth;
-            transition: background-color 0.3s ease;
-        }
-
-        /* 
-        ****************************************************************************************************
-        Navbar 
-        ****************************************************************************************************
-        */
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            height: 60px;
-            /* background-color: var(--color-1); */
-            background-color: rgba(0, 0, 0, 0.5); /* Same color as the overlay */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav svg {
-            fill: var(--text-color);
-        }
-
-        nav .logo {
-            font-size: 1.5rem;
-            color: var(--text-color);
-            display: none;
-        }
-
-        .links-container {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        nav a {
-            height: 100%;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: var(--text-color);
-            transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-            border-radius: 5px;  /* Softens the link edges */
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-            transform: translateY(-2px);  /* Creates a subtle lift effect */
-        }
-
-        #sidebar-active {
-            display: none;
-        }
-
-        .open-sidebar-button, .close-sidebar-button {
-            display: none;
-        }
-
-        nav .home-link {
-            margin-right: auto;
-        }
-
-        /* About section styling */
-        #about {
-            background-color: var(--color-1);
-            color: var(--text-color);
-        }
-
-        #about img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px; /* Adds rounded corners to the image */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow around the image */
-            margin-bottom: 20px;
-        }
-
-        #about p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 768px) {
-            #about .col-md-6 {
-                text-align: center;
-            }
-
-            #about img {
-                margin: 0 auto 20px auto;
-                width: 80%; /* Smaller image on mobile devices */
-            }
-        }
-
-
-        /* Mobile navbar styles */
-        @media(max-width: 768px) {
-            .links-container {
-                flex-direction: column;
-                align-items: flex-start;
-                position: fixed;
-                top: 0;
-                right: -100%;
-                z-index: 10;
-                width: 300px;
-                background-color: var(--color-1);
-                box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-                transition: right 0.75s ease-out;
-            }
-
-            nav a {
-                box-sizing: border-box;
-                height: auto;
-                width: 100%;
-                padding: 20px 30px;
-                justify-content: flex-start;
-            }
-
-            nav .logo {
-                font-size: 1.5rem;
-                color: var(--text-color);
-                display:inline-block;
-            }
-
-            .open-sidebar-button, .close-sidebar-button {
-                padding: 20px;
-                display: block;
-                cursor: pointer;
-            }
-
-            #sidebar-active:checked ~ .links-container {
-                right: 0;
-            }
-
-            #sidebar-active:checked ~ #overlay {
-                height: 100%;
-                width: 100%;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 9;
-                background: rgba(0, 0, 0, 0.5); 
-            }
-        }
-
-        /* Overlay for mobile navbar */
-        #overlay {
-            display: none;
-        }
-
-        #sidebar-active:checked ~ #overlay {
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-menu {
             display: block;
+            margin-top: 0; /* Optional: adjust if there's an unwanted gap */
         }
-
-
-        /* 
-        ****************************************************************************************************
-        Hero Section 
-        ****************************************************************************************************
-        */
-
-        .hero {
-            position: relative;
-            background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2921&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #fff;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            color: #DAA520;
-            margin-bottom: 20px;
-        }
-
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        /* 
-        ****************************************************************************************************
-        Services Section 
-        ****************************************************************************************************
-        */
-
-        section {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #1e1f26;
-        }
-        .container {
-        width: 90%;
-        max-width: 1000px;
-        margin: 50px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* background-color: aqua; */
-        }
-        .left {
-        width: 50%;
-        height: 600px;
-        background: url(https://images.unsplash.com/photo-1542662565-7e4b66bae529?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80)
-            no-repeat center / cover;
-        border-radius: 8px;
-        }
-        .right {
-        width: 50%;
-        min-height: 400px;
-        background-color: #303137;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 30px;
-        border-radius: 8px;
-        color: white;
-        margin-left: -150px;
-        }
-        .right h1 {
-        font-size: 40px;
-        font-weight: lighter;
-        }
-        .right p {
-        margin: 20px 0;
-        font-weight: 500;
-        line-height: 25px;
-        }
-        .right a {
-        text-decoration: none;
-        text-transform: uppercase;
-        background-color: white;
-        color: black;
-        padding: 20px 30px;
-        display: inline-block;
-        letter-spacing: 2px;
-        }
-
-        @media only screen and (max-width: 768px) {
-        .container {
-            flex-direction: column;
-            width: 100%;
-            margin: 0 20px;
-        }
-        .left {
-            width: 100%;
-            height: 400px;
-        }
-        .right {
-            width: 90%;
-            margin: 0;
-            margin-top: -100px;
-        }
-        }
-
-        
-        /* 
-        ****************************************************************************************************
-        Footer Section 
-        ****************************************************************************************************
-        */
-
-        footer {
-            background-color: #111;
-            padding: 20px;
-            text-align: center;
-            color: #DAA520;
-        }
-
-        /* 
-        ****************************************************************************************************
-        Service listing Section 
-        ****************************************************************************************************
-        */
-
-        .img-box img {
-            display: block;
-            width: 100%;
-            height: 30rem;
-            object-fit: cover;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: center;
-            grid-gap: 2rem;
-            text-align: center;
-            width: 90%;
-            margin: auto;
-        }
-
-        .card {
-            display: block;
-            overflow: hidden;
-            border-radius: 0.6rem;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-            cursor: pointer;
-            transition: 0.2s;
-            position: relative;
-        }
-
-        .card-content {
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.5);
-            bottom: 0;
-            color: #fff;
-            width: 100%;
-            height: 20%;
-            padding: 2.2rem 0;
-            overflow: hidden;
-            transition: 0.7s;
-        }
-
-        .card-content h1 {
-            font-size: 2rem;
-            font-weight: 600;
-            text-transform: capitalize;
-        }
-
-        .card-content p {
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.5rem;
-            padding: 1.2rem;
-        }
-
-        .card-content:hover {
-            height: 60%;
-            transition: 0.7s;
-        }
-
-        /* =====responsive===== */
-
-        @media (max-width: 1024px) {
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 767px) {
-            .grid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-
 
 
     </style>
+    
 </head>
 <body>
 
-    <!-- Navbar -->
+    <div>
+        Hello
+    </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg dark-background sticky-top">
+    <div class="container-fluid">
+        <!-- Toggle button for Offcanvas (only shown on small screens) -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas and Navbar Collapse for larger screens -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- Navbar links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
+                    <li class="nav-item px-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">About</a>
+                    </li>
+
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Planning Professional Agendas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="file:///Users/wisdomkalu/Desktop/prestige/elegant.html#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="btn-group mx-auto" role="group" aria-label="Language switcher">
+                    <input type="radio" class="btn-check" name="language" id="english" autocomplete="off" checked>
+                    <label class="btn btn-outline-light" for="english">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English" class="me-1"> English
+                    </label>
+                
+                    <input type="radio" class="btn-check" name="language" id="french" autocomplete="off">
+                    <label class="btn btn-outline-light" for="french">
+                        <img src="https://flagcdn.com/w20/fr.png" alt="French" class="me-1"> Français
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JS bundle (includes Popper.js for dropdowns) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+    <!-- Navbar 
     <nav>
-        <div class="logo">Prestige</div>
-        <input type="checkbox" id="sidebar-active">
-        <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </label>
-        <label id="overlay" for="sidebar-active"></label>
-        <div class="links-container">
-            <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <div class="container">
+            <div class="logo">Prestige</div>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </label>
-            <a class="home-link" href="">Home</a> 
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <a class="home-link" href="">Home</a> 
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="">Action</a>
+                      <a class="dropdown-item" href="">Another action</a>
+                      <a class="dropdown-item" href="">Something else here</a>
+                    </div>
+                  </div>
+            </div>
         </div>
     </nav>
+-->
 
     <!-- Hero Section -->
     <div class="hero">
@@ -444,6 +137,7 @@
 
     <!-- Services Section -->
     <section id="premium-service" class="py-5">
+
         <div class="container">
             <div class="left"></div>
             <div class="right">
@@ -463,37 +157,66 @@
         </div>
     </section>
 
-    <section class="container-fluid bg-gray">
-        <div class="cards grid">
-            <div class="card">
+    <section class="container-fluid bg-dark py-5">
+        <div class="all_cards grid">
+            <div class="individual_card">
                 <div class="img-box">
                     <img src="images/standing.jpg" alt="mountain img">
                 </div>
-                <div class="card-content">
-                    <h1 class="card-heading">heading one</h1>
+                <div class="all-card-content">
+                    <h1 class="all-card-heading">heading one</h1>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, recusandae eligendi dolores beatae mollitia reiciendis laboriosam, eius aliquam fugit, ullam quam perspiciatis odio dignissimos pariatur. Harum, sed? Animi, ipsam expedita!</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="individual_card">
                 <div class="img-box">
                     <img src="images/standing.jpg" alt="mountain img">
                 </div>
-                <div class="card-content">
-                    <h1 class="card-heading">heading one</h1>
+                <div class="all-card-content">
+                    <h1 class="all-card-heading">heading one</h1>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, recusandae eligendi dolores beatae mollitia reiciendis laboriosam, eius aliquam fugit, ullam quam perspiciatis odio dignissimos pariatur. Harum, sed? Animi, ipsam expedita!</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="individual_card">
                 <div class="img-box">
                     <img src="images/standing.jpg" alt="mountain img">
                 </div>
-                <div class="card-content">
-                    <h1 class="card-heading">heading one</h1>
+                <div class="all-card-content">
+                    <h1 class="all-card-heading">heading one</h1>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, recusandae eligendi dolores beatae mollitia reiciendis laboriosam, eius aliquam fugit, ullam quam perspiciatis odio dignissimos pariatur. Harum, sed? Animi, ipsam expedita!</p>
+                </div>
+            </div>
+            <div class="individual_card">
+                <div class="img-box">
+                    <img src="images/standing.jpg" alt="mountain img">
+                </div>
+                <div class="all-card-content">
+                    <h1 class="all-card-heading">heading one</h1>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, recusandae eligendi dolores beatae mollitia reiciendis laboriosam, eius aliquam fugit, ullam quam perspiciatis odio dignissimos pariatur. Harum, sed? Animi, ipsam expedita!</p>
+                </div>
+            </div>
+            <div class="individual_card">
+                <div class="img-box">
+                    <img src="images/standing.jpg" alt="mountain img">
+                </div>
+                <div class="all-card-content">
+                    <h1 class="all-card-heading">heading one</h1>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, recusandae eligendi dolores beatae mollitia reiciendis laboriosam, eius aliquam fugit, ullam quam perspiciatis odio dignissimos pariatur. Harum, sed? Animi, ipsam expedita!</p>
+                </div>
+            </div>
+            <div class="individual_card">
+                <div class="img-box">
+                    <img src="images/standing.jpg" alt="mountain img">
+                </div>
+                <div class="all-card-content">
+                    <h1 class="all-card-heading">heading one</h1>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, recusandae eligendi dolores beatae mollitia reiciendis laboriosam, eius aliquam fugit, ullam quam perspiciatis odio dignissimos pariatur. Harum, sed? Animi, ipsam expedita!</p>
                 </div>
             </div>
         </div>
     </section>
+
+      
     
     
     
@@ -504,6 +227,8 @@
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
