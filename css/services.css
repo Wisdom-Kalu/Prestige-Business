@@ -201,39 +201,6 @@ nav .home-link {
     }
 */
 
-/* About section styling */
-#about {
-    background-color: var(--color-1);
-    color: var(--text-color);
-}
-
-#about img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Adds rounded corners to the image */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow around the image */
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    #about .col-md-6 {
-        text-align: center;
-    }
-
-    #about img {
-        margin: 0 auto 20px auto;
-        width: 80%; /* Smaller image on mobile devices */
-    }
-}
-
-
-
 /* 
 ****************************************************************************************************
 Hero Section 
@@ -278,6 +245,44 @@ Hero Section
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
+
+/* 
+****************************************************************************************************
+About Section 
+****************************************************************************************************
+*/
+
+/* About section styling */
+#about {
+    background-color: var(--color-1);
+    color: var(--text-color);
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners to the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow around the image */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #about .col-md-6 {
+        text-align: center;
+    }
+
+    #about img {
+        margin: 0 auto 20px auto;
+        width: 80%; /* Smaller image on mobile devices */
+    }
+}
+
 
 /* 
 ****************************************************************************************************
@@ -357,20 +362,6 @@ letter-spacing: 2px;
 }
 }
 
-
-/* 
-****************************************************************************************************
-Footer Section 
-****************************************************************************************************
-*/
-
-footer {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-    color: #DAA520;
-}
-
 /* 
 ****************************************************************************************************
 Service listing Section 
@@ -434,11 +425,33 @@ Service listing Section
     height: 60%;
     transition: 0.7s;
 }
-*/
+
 
 .individual_card:hover .all-card-content{
     height: 60%;
     transition: 0.7s;
+}
+*/
+
+/* Hover effect for larger screens */
+@media (min-width: 1025px) {
+    .individual_card:hover .all-card-content {
+        height: 60%;
+        transition: height 0.7s ease;
+    }
+}
+
+/* Initially hidden for mobile */
+.all-card-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.7s ease;
+}
+
+/* Visible class for scroll effect on mobile */
+.all-card-content.visible {
+    height: 60%;
+    transition: height 0.7s ease;
 }
 
 /* =====responsive===== */
@@ -453,4 +466,17 @@ Service listing Section
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+/* 
+****************************************************************************************************
+Footer Section 
+****************************************************************************************************
+*/
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #DAA520;
 }

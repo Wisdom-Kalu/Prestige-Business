@@ -229,6 +229,40 @@
     <!-- Bootstrap JS and dependencies -->
 <!-- Bootstrap JS bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Check if the screen is mobile-sized (below 768px)
+        if (window.innerWidth < 1025) {
+            // Create Intersection Observer for mobile devices
+            let observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add 'visible' class to .all-card-content inside .individual_card
+                        if (entry.target.classList.contains('individual_card')) {
+                            entry.target.querySelector('.all-card-content').classList.add('visible');
+                        }
+
+                        // Add 'visible' class to .new_overlay inside .new_box
+                        if (entry.target.classList.contains('new_box')) {
+                            entry.target.querySelector('.new_overlay').classList.add('visible');
+                        }
+                    }
+                });
+            }, { threshold: 0.2 }); // Adjust threshold as needed
+
+            // Observe each .individual_card element
+            document.querySelectorAll('.individual_card').forEach(card => {
+                observer.observe(card);
+            });
+
+            // Observe each .new_box element
+            document.querySelectorAll('.new_box').forEach(box => {
+                observer.observe(box);
+            });
+        }
+    });
+</script>
+
 
 </body>
 </html>
