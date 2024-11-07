@@ -38,6 +38,8 @@
 	loader();
 
 	// Scrollax
+
+	/*
    $.Scrollax();
 
 	var carousel = function() {
@@ -152,7 +154,7 @@
 	};
 	scrollWindow();
 
-	
+	*/
 	var counter = function() {
 		
 		$('#section-counter').waypoint( function( direction ) {
