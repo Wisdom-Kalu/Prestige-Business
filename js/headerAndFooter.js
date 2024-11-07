@@ -79,68 +79,69 @@ class PrestigeFooter extends HTMLElement{
     connectedCallback() {
         this.innerHTML = 
         `
-        <footer class="text-light pt-5 pb-3">
-            <div class="container">
-                <div class="row">
-                    <!-- Contact Info 
-                    <div class="col-md-4 mb-4">
-                        <h5 class="fw-bold mb-3">Have a Question?</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>502 Palms Drive Ayi Mensah Park, Accra, Ghana</li>
-                            <li class="mb-2"><i class="fas fa-phone me-2"></i>+233558766567</li>
-                            <li class="mb-2"><i class="fas fa-envelope me-2"></i><a href="mailto:sandrine.agbcompta@gmail.com" class="text-light text-decoration-none">sandrine.agbcompta@gmail.com</a></li>
-                        </ul>
-                    </div>
-                -->
+        <footer class="text-light py-5">
+        <div class="container">
+            <div class="row social-icons"">
 
-                    <!-- Contact Info -->
-                    <div class="col-md-4 mb-4">
-                        <h5 class="fw-bold mb-3">Have a Question?</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><span class="fas fa-map-marker-alt"></span><span class="text-light">502 Palms Drive Ayi Mensah Park, Accra, Ghana</span></li>
-                            <li class="mb-2"><span class="fas fa-phone"></span><span class="text-light">+233558766567</span></li>
-                            <li class="mb-2"><span class="fas fa-envelope"></span><a href="mailto:sandrine.agbcompta@gmail.com" class="text-light text-decoration-none">sandrine.agbcompta@gmail.com</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Quick Links -->
-                    <div class="col-md-4 mb-4 offset-md-1">
-                        <h5 class="fw-bold mb-3">Quick Links</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
-                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">About</a></li>
-                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Services</a></li>
-                            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
-                        </ul>
-                    </div>
-        
-                    <!-- Social Media -->
-                    <div class="col-md-3 mb-4 text-center text-md-start">
-                        <h5 class="fw-bold mb-3">Connect With Us</h5>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-light"><i class="fab fa-instagram fa-2x"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Address Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase" style="color: var(--accent-color);">Address</h5>
+                    <p class="text-light">
+                        502 Palms Drive, Ayi Mensah Park <br>
+                        Accra, Ghana <br>
+                        Phone: +233 558 766 567 <br>
+                        Email: <a href="mailto:sandrine.agbcompta@gmail.com" class="text-decoration-none text-light">sandrine.agbcompta@gmail.com</a>
+                    </p>
                 </div>
-        
-                <hr class="bg-light">
-        
-                <!-- Copyright -->
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p class="mb-0">Copyright © All rights reserved | Designed by <a href="#" class="text-decoration-underline text-light fw-bold">WisdomFromAbove Designs</a></p>
-                    </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase" style="color: var(--accent-color);">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+    
+                <!-- Social Media Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase" style="color: var(--accent-color);">Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fab fa-facebook fa-3x"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fab fa-twitter fa-3x"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fab fa-instagram fa-3x"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fab fa-linkedin fa-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            
+            <!-- Copyright Section -->
+            <div class="text-center mt-4">
+                <hr class="bg-light">
+                <p class="mb-0">&copy; 2024 Prestige Business Travel. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
         
         `
     }
@@ -227,53 +228,67 @@ class SpecialFooter extends HTMLElement{
     connectedCallback() {
         this.innerHTML = 
         `
-        <footer class="ftco-footer ftco-bg-dark ftco-section">
-            <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-4 col-lg-4">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2">Have a Question?</h2>
-                    <div class="block-23 mb-3">
-                        <ul>
-                        <li><span class="icon icon-map-marker"></span><span class="text">502 Palms Drive Ayi Mensah Park,
-                         Accra, Ghana</span></li>
-                        <li><a href="#"><span class="icon icon-phone"></span><span class="text">+233558766567</span></a></li>
-                        <li><a href="#"><span class="icon icon-envelope"></span><span class="text">sandrine.agbcompta@gmail.com</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-                <div class="col-md-4 col-lg-4 offset-md-1">
-                <div class="ftco-footer-widget mb-5 ml-md-4">
-                    <h2 class="ftco-heading-2">Quick Links</h2>
-                    <ul class="list-unstyled">
-                    <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                    <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                    <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Services</a></li>
-                    <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a></li>
-                    </ul>
-                </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                    </ul>
-                </div>
-                </div>
+        <footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Quick Links Column -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase" style="color: var(--accent-color);">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Services</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-    
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed by <a href="https://wisdom-kalu.github.io/simple_portfolio/" target="_blank">WisdomFromAbove Designs</a>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                </div>
+
+            <!-- Address Column -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase" style="color: var(--accent-color);">Address</h5>
+                <p class="text-light">
+                    502 Palms Drive, Ayi Mensah Park <br>
+                    Accra, Ghana <br>
+                    Phone: +233 558 766 567 <br>
+                    Email: <a href="mailto:sandrine.agbcompta@gmail.com" class="text-decoration-none text-light">sandrine.agbcompta@gmail.com</a>
+                </p>
             </div>
+
+            <!-- Social Media Column -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase" style="color: var(--accent-color);">Follow Us</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light text-decoration-none">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light text-decoration-none">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light text-decoration-none">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light text-decoration-none">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </footer>
+        </div>
+        
+        <!-- Copyright Section -->
+        <div class="text-center mt-4">
+            <hr class="bg-light">
+            <p class="mb-0">&copy; 2024 Prestige Business Travel. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
         
         `
     }

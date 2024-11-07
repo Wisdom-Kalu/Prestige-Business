@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us | Prestige Business Travel</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/services.css">
+    <style>
+        .section-heading {
+            color: var(--accent-color);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* Image Styling */
+        .about-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Text Styling */
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* Accent Borders */
+        .border-accent {
+            border-top: 3px solid var(--accent-color);
+            margin-top: 1rem;
+            width: 50px;
+        }
+
+        /* Button Styling */
+        .btn-accent {
+            background-color: var(--accent-color);
+            color: #111;
+            border-radius: 30px;
+            padding: 0.5rem 1.5rem;
+            font-weight: bold;
+        }
+
+        .btn-accent:hover {
+            background-color: #b58920;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- Logo, navbar and Header Section -->
+<prestige-header></prestige-header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-heading">About Us</h2>
+            
+            <!-- Row 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="images/sitting.jpg" alt="Founder Image" class="about-img">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>
+                            Prestige Business Travel was founded by Sandrine Agbanavor, driven by her 15+ years of experience in business management and a passion for travel.
+                            We specialize in bespoke travel solutions that reflect our dedication to excellence and client satisfaction.
+                        </p>
+                        <p>
+                            Each journey with us is tailored to meet our clients' unique needs, ensuring convenience, luxury, and personalized attention throughout West Africa and beyond.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6" data-aos="fade-left">
+                    <img src="images/sitting.jpg" alt="Team Image" class="about-img">
+                </div>
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="about-text">
+                        <h3>Our Expertise</h3>
+                        <p>
+                            With a focus on sustainability and local expertise, we deliver seamless and luxurious experiences that connect our clients to West Africa's finest destinations.
+                            Our team is committed to meticulous planning and high-quality service in every aspect of business and leisure travel.
+                        </p>
+                        <p>
+                            From executive travel arrangements to concierge services, our experts ensure a smooth journey, every time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="images/sitting.jpg" alt="Service Image" class="about-img">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="about-text">
+                        <h3>Our Vision</h3>
+                        <p>
+                            We envision a future where business travel becomes an enriching experience that harmonizes with environmental values and local cultures.
+                            By focusing on sustainable practices, we aim to set new standards for travel that benefit both our clients and the communities we touch.
+                        </p>
+                        <p>
+                            Join us in redefining what it means to travel with purpose, elegance, and responsibility.
+                        </p>
+                        <a href="#" class="btn btn-accent mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <prestige-footer></prestige-footer>
+
+    <script src="js/headerAndFooter.js"></script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
