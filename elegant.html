@@ -7,12 +7,6 @@
     <title>Prestige Business Travel</title>
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/animate.css">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- AOS CSS for Scroll Animations -->
@@ -25,55 +19,28 @@
 
     <!-- Custom CSS for Navbar and Transitions -->
     <style>
-        :root{
-            --color-1: #111;
-            --text-color: #f0f0f0 !important;
-            --accent-color: #DAA520 !important;
-            --white-color: hsl(170, 12%, 98%) !important;
-            --gray-color: hsl(170, 4%, 60%) !important;
-            --black-color: hsl(170, 12%, 8%) !important;
-            --body-font: "Bona Nova", serif!;
-            --normal-font-size: .938rem !important;
-        }
 
-        @media screen and (min-width: 1120px) {
-            :root {
-                --normal-font-size: 1rem;
-            }
-        }
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-        }
+        /*
         body {
             margin: 0;
-            /*font-family: 'Arial', sans-serif;*/
+            /*font-family: 'Arial', sans-serif;
             font-family: var(--body-font);
             background-color: var(--color-1) !important;
             color: #fff;
             scroll-behavior: smooth;
             transition: background-color 0.3s ease;
-            overflow-x: hidden;
-            overflow-y: auto; /* Ensure vertical scroll */
         }
-
-        html {
-            overflow-x: hidden;
-            overflow-y: auto; /* Ensure vertical scroll */
-        }
-
-
+*/
         .text-light {
             color: #f8f9fa !important; 
         }
        
-        /* About section styling */
+        /* 
+        ****************************************************************************************************
+        Homepage: About Section
+        ****************************************************************************************************
+        */
+
         #about {
             background-color: var(--color-1) !important;
             color: var(--text-color) !important;
@@ -104,121 +71,16 @@
             }
         }
     
-        #about h2,
-        #services h2,
-        #contact h2 {
+        #about h2, #services h2, #contact h2 {
             color: #DAA520;
         }
 
+        /* 
+        ****************************************************************************************************
+        Homepage: Services
+        ****************************************************************************************************
+        */
 
-        /* Services Section */
-        .service-item {
-            position: relative;
-            margin-bottom: 10px;
-        }
-
-        .service-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            object-fit: cover; /* Ensure the image scales properly within the container */
-            /* transition: transform 0.1s ease; */
-        }
-
-        .service-item .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            opacity: 1; /* Make the overlay always visible */
-            transition: opacity 0.3s ease;
-        }
-
-        .service-item:hover .overlay {
-            opacity: 0; 
-            background:transparent; 
-        }
-
-        .service-item .text {
-            font-size: 1.5rem;
-            color: white;
-            text-transform: uppercase;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .service-item:hover img {
-            transform: scale(1.05);
-        }
-
-        .service-item:hover .overlay {
-            opacity: 1;
-        }
-
-        /* Make entire service item clickable */
-        .service-link {
-            display: block;
-            position: relative;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* contact us */
-        .vr {
-            border-left: 1px solid lightgray;
-            margin: 0 auto;
-        }
-
-
-
-        /* Footer */
-        footer {
-        font-size: 16px;
-        }
-
-        footer h5 {
-            font-size: 1.25rem;
-            color: #DAA520;
-        }
-
-        footer a {
-            color: #fff;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #DAA520;
-            text-decoration: underline;
-        }
-
-        footer .list-inline-item a:hover {
-            transform: scale(1.1);
-            color: #DAA520 !important;
-        }
-
-        footer .list-unstyled li {
-            margin-bottom: 10px;
-        }
-
-        footer .list-inline-item {
-            margin-right: 15px;
-        }
-
-        footer hr {
-            margin: 2rem 0;
-        }
-
-        footer .text-decoration-underline:hover {
-            color: #DAA520;
-        }
-
-        /*new card */
         .new_box {
             border-radius: 10px;
             position: relative;
@@ -300,6 +162,83 @@
 
         }
 
+        #wrapper {
+    position: relative;
+}
+
+.owl-carousel .slider-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.slider-text h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: #DAA520;
+}
+
+.slider-text h2 span {
+    color: coral;
+}
+
+.slider-text p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.slider-text .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.slider-text .btn:hover {
+    background-color: #DAA520;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .slider-item {
+        height: 70vh;
+    }
+
+    .slider-text h2 {
+        font-size: 2rem;
+    }
+
+    .slider-text p {
+        font-size: 1rem;
+    }
+}
+
 
     </style>
 </head>
@@ -309,18 +248,36 @@
 
     <!-- Hero Section with Slider -->
    
-        <div id="wrapper">
-            <div class="owl-carousel" id="slider-area">
-                <div style="background-image: url(images/flight.jpeg)"></div>
-                <div style="background-image: url(images/bg_5.jpg)"></div>
-                <div style="background-image: url(images/contact_us.png)"></div>
+    <div id="wrapper">
+        <div class="owl-carousel owl-theme" id="slider-area">
+            <div class="slider-item" style="background-image: url('images/flight.jpeg')">
+                <div class="overlay"></div>
+                <div class="slider-text">
+                    <h2>Creative <span>Agency</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, beatae.</p>
+                    <a href="about-us.html" class="btn">Learn More</a>
+                    <a href="contact.html" class="btn">Contact Us</a>
+                </div>
             </div>
-
-            <div class="slider-text">
-                <h2>Creative <span>Agency</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, beatae.</p><a href="about-us.html">learn More</a> <a class="btn" href="contact.html">Contact Us</a>
+            <div class="slider-item" style="background-image: url('images/bg_5.jpg')">
+                <div class="overlay"></div>
+                <div class="slider-text">
+                    <h2>Innovative <span>Solutions</span></h2>
+                    <p>Providing high-quality services to our clients with excellence.</p>
+                    <a href="services.html" class="btn">Our Services</a>
+                </div>
+            </div>
+            <div class="slider-item" style="background-image: url('images/contact_us.png')">
+                <div class="overlay"></div>
+                <div class="slider-text">
+                    <h2>Dedicated <span>Support</span></h2>
+                    <p>We’re here to assist you every step of the way.</p>
+                    <a href="contact.html" class="btn">Get in Touch</a>
+                </div>
             </div>
         </div>
+    </div>
+    
 
 
     <!-- About Section -->
@@ -358,7 +315,6 @@
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-dark">
-       
             <div class="container">
                 <h2 class="text-center mb-5" data-aos="fade-up">Our Services</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Bootstrap grid system with responsive column count -->
@@ -435,40 +391,12 @@
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-    <script src="js/headerAndFooter.js"></script>
-    <!-- Font Awesome Icons (for icons in the footer) -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS for Scroll Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <!--<script src="js/scrollax.min.js"></script>-->
-    <script src="js/main.js"></script>
-    
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
-	<script>
-	$('#slider-area').owlCarousel({
-	   loop: true,
-	   autoplay: true,
-	   responsive: {
-	       0: {
-	           items: 1
-	       },
-	       600: {
-	           items: 1
-	       },
-	       1000: {
-	           items: 1
-	       }
-	   }
-	})        
-	</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/headerAndFooter.js"></script> 
+    <script src="js/main.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
