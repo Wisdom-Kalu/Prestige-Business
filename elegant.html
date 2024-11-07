@@ -41,6 +41,12 @@
                 --normal-font-size: 1rem;
             }
         }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -53,7 +59,13 @@
             color: #fff;
             scroll-behavior: smooth;
             transition: background-color 0.3s ease;
+            overflow-x: hidden;
         }
+
+        html {
+            overflow-x: hidden;
+        }
+
 
         .text-light {
             color: #f8f9fa !important; 
