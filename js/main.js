@@ -34,10 +34,10 @@
 	       }
 	   }
 	})        
-	*/
+	
 
 	var carousel = function() {
-		$('#slider-area').owlCarousel({
+		$('#responsive-slider').owlCarousel({
 	    loop:true,
 	    autoplay: true,
 	    margin:0,
@@ -61,7 +61,7 @@
 		});
 	};
 	carousel();
-
+*/
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		// 	 timer;
