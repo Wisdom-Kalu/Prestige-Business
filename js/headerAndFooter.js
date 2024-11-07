@@ -1,36 +1,75 @@
 class PrestigeHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
+
+        <!-- Logo and Title Section -->
+        <div class="header-logo bg-dark">
+            <img src="images/logo-2.png" alt="Logo" class="logo-image">
+            <!--
+            <h1 class="header-title">Your Company Name</h1>
+            <p class="header-subtitle">Tagline or Subtitle</p>
+            -->
+        </div>
        
-        <nav class="navbar">
-            <div class="logo">Prestige</div>
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            </label>
-            <label id="overlay" for="sidebar-active"></label>
-            <div class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                </label>
-                <a class="home-link" href="elegant.html">Home</a> 
-                <a href="#about">About</a>
-                <!-- Dropdown for Services -->
-                <div class="d">
-                    <button class="d-btn">Services</button>
-                    <div class="d-content">
-                        <div class="column">
-                            <a href="">Planning Professional Agendas</a>
-                            <a href="">Planning Professional Agendas</a>
-                            <a href="">Planning Professional Agendas</a>
-                            <a href="">Planning Professional Agendas</a>
-                            <a href="">Planning Professional Agendas</a>
+        <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg dark-background sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-lg-none" href="#">Prestige</a>
+                    <!-- Toggle button for Offcanvas (only shown on small screens) -->
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Offcanvas and Navbar Collapse for larger screens -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- Navbar links -->
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
+                                <li class="nav-item px-3">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-3" href="#">About</a>
+                                </li>
+
+                                <!-- Dropdown Menu -->
+                                <li class="nav-item dropdown px-3">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Planning Professional Agendas</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Service 2</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Service 3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="file:///Users/wisdomkalu/Desktop/prestige/elegant.html#contact">Contact</a>
+                                </li>
+                            </ul>
+
+                            <div class="btn-group mx-auto" role="group" aria-label="Language switcher">
+                                <input type="radio" class="btn-check" name="language" id="english" autocomplete="off" checked>
+                                <label class="btn btn-outline-light" for="english">
+                                    <img src="https://flagcdn.com/w20/gb.png" alt="English" class="me-1"> English
+                                </label>
+                            
+                                <input type="radio" class="btn-check" name="language" id="french" autocomplete="off">
+                                <label class="btn btn-outline-light" for="french">
+                                    <img src="https://flagcdn.com/w20/fr.png" alt="French" class="me-1"> Français
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
+            </nav>
         `
     }
 }
@@ -40,7 +79,7 @@ class PrestigeFooter extends HTMLElement{
     connectedCallback() {
         this.innerHTML = 
         `
-        <footer class="bg-dark text-light pt-5 pb-3">
+        <footer class="text-light pt-5 pb-3">
             <div class="container">
                 <div class="row">
                     <!-- Contact Info 

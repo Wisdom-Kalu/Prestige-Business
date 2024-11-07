@@ -19,7 +19,10 @@
     <!-- AOS CSS for Scroll Animations -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/services.css">
 
     <!-- Custom CSS for Navbar and Transitions -->
     <style>
@@ -56,230 +59,6 @@
         .text-light {
             color: #f8f9fa !important; 
         }
-
-        /* Sticky Navbar */
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            height: 60px;
-            /* background-color: var(--color-1); */
-            background-color: rgba(0, 0, 0, 0.5); /* Same color as the overlay */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav svg {
-            fill: var(--text-color);
-        }
-
-        nav .logo {
-            font-size: 1.5rem;
-            color: var(--text-color);
-            display: none;
-        }
-
-        .links-container {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        nav a {
-            height: 100%;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: var(--text-color);
-            transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-            border-radius: 5px;  /* Softens the link edges */
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-            /*transform: translateY(-2px);  Creates a subtle lift effect */
-        }
-
-        #sidebar-active {
-            display: none;
-        }
-
-        .open-sidebar-button, .close-sidebar-button {
-            display: none;
-        }
-
-        nav .home-link {
-            margin-right: auto;
-        }
-
-        /* Dropdown container 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Button inside the dropdown 
-        .dropdown .dropbtn {
-            color: var(--text-color);
-            background: none;
-            padding: 0 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-
-        /* Dropdown content (hidden by default) 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: var(--color-1);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        /* Links inside the dropdown 
-        .dropdown-content a {
-            color: #fff;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
-
-        .dropdown-content a:hover {
-            background-color: var(--accent-color);
-            color: var(--color-1);
-        }
-
-        /* Show dropdown on hover (for desktop) 
-        @media (min-width: 768px) {
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-        }
-        */
-        /* Mobile navbar styles */
-        @media(max-width: 768px) {
-            .links-container {
-                flex-direction: column;
-                align-items: flex-start;
-                position: fixed;
-                top: 0;
-                right: -100%;
-                z-index: 10;
-                width: 300px;
-                background-color: var(--color-1) !important;
-                box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-                transition: right 0.75s ease-out;
-            }
-
-            nav a {
-                box-sizing: border-box;
-                height: auto;
-                width: 100%;
-                padding: 20px 30px;
-                justify-content: flex-start;
-            }
-
-            nav .logo {
-                font-size: 1.5rem;
-                color: var(--text-color);
-                display:inline-block;
-            }
-
-            .open-sidebar-button, .close-sidebar-button {
-                padding: 20px;
-                display: block;
-                cursor: pointer;
-            }
-
-            #sidebar-active:checked ~ .links-container {
-                right: 0;
-            }
-
-            #sidebar-active:checked ~ #overlay {
-                height: 100%;
-                width: 100%;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 9;
-                background: rgba(0, 0, 0, 0.5); 
-            }
-        }
-
-        /* Overlay for mobile navbar */
-        #overlay {
-            display: none;
-        }
-
-        #sidebar-active:checked ~ #overlay {
-            display: block;
-        }
-
-        .d {
-            float: left;
-            overflow: hidden;
-        }
-
-        .d .d-btn {
-            color: var(--text-color);
-            background: none;
-            padding: 0 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-
-        .d .d-btn:hover{
-            color: var(--accent-color);
-        }
-
-        .d-content {
-            display: none;
-            position: absolute;
-            background-color: var(--color-1);
-            color: var(--text-color);
-            width: 100%;
-            left: 0;
-            z-index: 10;
-        }
-        .d:hover .d-content {
-            display: block;
-        }
-
-        .d-content a:hover {
-            color: var(--accent-color);
-        }
-
-        .d-content .column{
-            height: 50%;
-        }
-
-        @media(max-width: 650px){
-            .column {
-                width: 100%;
-                height: auto;
-            }
-        }
        
         /* About section styling */
         #about {
@@ -311,227 +90,12 @@
                 width: 80%; /* Smaller image on mobile devices */
             }
         }
-
-
-        /* Hero Section - Slider */
-        .hero-slider {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .slides {
-            display: flex;
-            width: 300%;
-            height: 100%;
-            transition: transform 1s ease-in-out;
-        }
-
-        .slide {
-            width: 100%;
-            height: 100%;
-            flex-shrink: 0;
-            position: relative;
-        }
-
-        .slide img {
-            width: 100%;
-            height: 100%;
-            /*object-fit: cover;*/
-            object-fit: cover;
-        }
-
-        /* Adjust height on tablets and smaller screens */
-        @media (max-width: 1024px) {
-            .hero-slider {
-                height: 80vh; /* Slightly reduced height for tablets */
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero-slider {
-                height: 70vh; /* Further reduced height for tablets and small devices */
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem; /* Smaller font size for readability */
-            }
-
-            .hero-content p {
-                font-size: 1rem;
-            }
-
-            .slider-dots {
-                bottom: 15px; /* Adjust position for smaller screens */
-            }
-
-            .slider-dot {
-                width: 8px;
-                height: 8px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-slider {
-                height: 60vh; /* Reduced height for very small devices */
-            }
-
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .hero-content p {
-                font-size: 0.9rem;
-            }
-
-            .slider-dots {
-                bottom: 10px;
-            }
-
-            .slider-dot {
-                width: 6px;
-                height: 6px;
-            }
-        }
-
-        /* Overlay on Slider */
-        .slide::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            max-width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-            z-index: 1;
-        }
-
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            text-align: center;
-            color: #fff;
-            padding: 0 20px; /* for better text spacing on small screens */
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            color: #DAA520;
-            margin-bottom: 20px;
-            transition: transform 0.5s ease;
-        }
-
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .hero-content h1:hover {
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 768px) {
-            .hero-content {
-                max-width: 90%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-content {
-                max-width: 95%;
-            }
-        }
-
-        /* Responsive font sizes */
-        @media (max-width: 1024px) {
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-content p {
-                font-size: 1rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .hero-content p {
-                font-size: 0.9rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-content h1 {
-                font-size: 1.5rem;
-            }
-
-            .hero-content p {
-                font-size: 0.8rem;
-            }
-        }
-
-        /* Slider Navigation Dots */
-        .slider-dots {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            z-index: 2;
-        }
-
-        .slider-dot {
-            width: 10px;
-            height: 10px;
-            background-color: #fff;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        .active-dot {
-            background-color: #DAA520;
-        }
-
-        /* Responsive slider dots */
-        @media (max-width: 1024px) {
-            .slider-dot {
-                width: 9px;
-                height: 9px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .slider-dot {
-                width: 8px;
-                height: 8px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .slider-dot {
-                width: 6px;
-                height: 6px;
-            }
-        }
-
     
-
         #about h2,
         #services h2,
         #contact h2 {
             color: #DAA520;
         }
-
 
 
         /* Services Section */
@@ -642,18 +206,6 @@
         }
 
         /*new card */
-        .new_wrapper{
-            padding: 10px 10%;
-        }
-        #card-area{
-            padding: 50px 0;
-        }
-        .new_box-area{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 40px;
-            margin-top: 50px;
-        }
         .new_box {
             border-radius: 10px;
             position: relative;
@@ -740,185 +292,126 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div class="container">
-        <div>Hello world</div>
-    </div>
-
     <prestige-header></prestige-header>
 
     <!-- Hero Section with Slider -->
-    <section class="home-slider owl-carousel">
-        <!--<div class="slider-item" style="background-image:url(images/bg_1.jpg);">-->
-        <div class="slider-item" style="background-image:url(images/flight.jpeg);">
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-            <div class="col-md-7 ftco-animate">
-                <span class="subheading">Welcome to Prestige Business Travel</span>
-              <h1 class="mb-4">We Provide Tailor-Made Business Travel</h1>
-              <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Our Services</a></p>
+   
+        <div id="wrapper">
+            <div class="owl-carousel" id="slider-area">
+                <div style="background-image: url(images/flight.jpeg)"></div>
+                <div style="background-image: url(images/bg_5.jpg)"></div>
+                <div style="background-image: url(images/contact_us.png)"></div>
             </div>
-          </div>
-          </div>
-        </div>
-  
-        <div class="slider-item" style="background-image:url(images/hotel.jpg);">
-          <!--<div class="slider-item" style="background-image:url(images/bg_2.jpg);">-->
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-            <div class="col-md-7 ftco-animate">
-                <span class="subheading">Remarkable Concierge</span>
-              <h1 class="mb-4">Our Luxury Concierge is One of the Best</h1>
-              <p>
-                  <a href="#" class="btn btn-primary px-4 py-3 mt-3">Our Services</a>
-              </p> 
+
+            <div class="slider-text">
+                <h2>Creative <span>Agency</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, beatae.</p><a href="#">learn More</a> <a class="btn" href="#">Contact Us</a>
             </div>
-          </div>
-          </div>
         </div>
-      </section>
+
 
     <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">About Me</h2>
-            <div class="row align-items-start">
-                <!-- Image Column -->
-                <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-                    <img src="images/sitting.jpg" alt="About Me Image" class="img-fluid rounded shadow">
-                </div>
-                <!-- Text Column -->
-                <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="200">
-                    <p>
-                        My name is Sandrine Agbanavor, founder of Prestige Business Travel. 
-                        With over 15 years of experience in business management and a passion for travel, 
-                        I created this company to meet the needs of clients seeking bespoke travel experiences. 
-                        Every journey reflects our commitment to excellence and personalized services.
-                    </p>
-                    <p>
-                        We focus on providing tailored business and luxury travel services across West Africa, 
-                        with a keen eye for sustainability and local expertise. Let us craft your perfect business trip, 
-                        combining convenience, luxury, and personalized attention.
-                    </p>
-                </div>
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">About Us</h2>
+        <div class="row g-5 align-items-start"> <!-- Bootstrap's row with gutter spacing -->
+            <!-- Image Column -->
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+                <img src="images/sitting.jpg" alt="About Me Image" class="img-fluid rounded shadow">
+            </div>
+            <!-- Text Column -->
+            <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="200">
+                <p>
+                    My name is Sandrine Agbanavor, founder of Prestige Business Travel. 
+                    With over 15 years of experience in business management and a passion for travel, 
+                    I created this company to meet the needs of clients seeking bespoke travel experiences. 
+                    Every journey reflects our commitment to excellence and personalized services.
+                </p>
+                <p>
+                    We focus on providing tailored business and luxury travel services across West Africa, 
+                    with a keen eye for sustainability and local expertise. Let us craft your perfect business trip, 
+                    combining convenience, luxury, and personalized attention.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-dark">
-        <div id="new_card-area">
-            <div class="new_wrapper">
-                <div class="new_box-area container">
-                    <div class="new_box">
-                        <img alt="" src="images/sitting.jpg">
-                        <div class="new_overlay">
-                            <h3>Business Travel Organization</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
+        <section id="services" class="py-5 bg-dark">
+            <div class="container">
+                <h2 class="text-center mb-5" data-aos="fade-up">Our Services</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Bootstrap grid system with responsive column count -->
+                    <!-- Service Item 1 -->
+                    <div class="col">
+                        <div class="service-item new_box">
+                            <img src="images/sitting.jpg" alt="Business Travel" class="img-fluid rounded shadow">
+                            <div class="new_overlay">
+                                <h3>Business Travel Organization</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
+                                <a href="#" class="btn btn-light mt-3">Book Now</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="new_box">
-                        <img alt="" src="images/sitting.jpg">
-                        <div class="new_overlay">
-                            <h3>Planning Professional Agendas</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
-                        </div>
-                    </div>
-                    <div class="new_box">
-                        <img alt="" src="images/sitting.jpg">
-                        <div class="new_overlay">
-                            <h3>Luxury Concierge Services</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
-                        </div>
-                    </div>
-                    <div class="new_box">
-                        <img alt="" src="images/sitting.jpg">
-                        <div class="new_overlay pt-4">
-                            <h3>Personalized Assistance</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
-                        </div>
-                    </div>
-                    <div class="new_box">
-                        <img alt="" src="images/sitting.jpg">
-                        <div class="new_overlay pt-4">
-                            <h3>Multilingual Support</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    
-    <!--Contact Section-->
-    <section id="contact" class="py-5">
         
-        <div class="container">
-            <h2 class="text-center mb-5 mt-5" data-aos="fade-up">Contact Us</h2>
-            <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
-                If you got any questions, please do not hesitate to send us a message.
-            </p>
-            <div class="row text-center mt-5 mb-5">
-                <!-- Address -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="d-flex flex-column align-items-center">
-                        <i class="fas fa-map-marker-alt fa-2x mb-3" style="color: gray;"></i>
-                        <h5 class="fw-bold text-light">Address:</h5>
-                        <p class="text-white-50" style="font-weight: 500;">502 Palms Drive, Ayi Mensah Park, Accra, Ghana</p>
+                    <!-- Service Item 2 -->
+                    <div class="col">
+                        <div class="service-item new_box">
+                            <img src="images/sitting.jpg" alt="Agenda Planning" class="img-fluid rounded shadow">
+                            <div class="new_overlay">
+                                <h3>Planning Professional Agendas</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
+                                <a href="#" class="btn btn-light mt-3">Book Now</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Divider -->
-                <div class="col-md-1 d-none d-md-block">
-                    <div class="vr" style="height: 100px;"></div>
-                </div>
-                <!-- Phone -->
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="d-flex flex-column align-items-center">
-                        <i class="fas fa-phone fa-2x mb-3" style="color: gray;"></i>
-                        <h5 class="fw-bold text-light">Phone:</h5>
-                        <p class="text-white-50" style="font-weight: 500;">+233 558 766 567</p>
+        
+                    <!-- Service Item 3 -->
+                    <div class="col">
+                        <div class="service-item new_box">
+                            <img src="images/sitting.jpg" alt="Luxury Concierge" class="img-fluid rounded shadow">
+                            <div class="new_overlay">
+                                <h3>Luxury Concierge Services</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
+                                <a href="#" class="btn btn-light mt-3">Book Now</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Divider -->
-                <div class="col-md-1 d-none d-md-block">
-                    <div class="vr" style="height: 100px;"></div>
-                </div>
-                <!-- Email -->
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="d-flex flex-column align-items-center">
-                        <i class="fas fa-envelope fa-2x mb-3" style="color: gray;"></i>
-                        <h5 class="fw-bold text-light">Email:</h5>
-                        <p class="text-white" style="font-weight: 500;">
-                            <a href="mailto:sandrine.agbcompta@gmail.com" class="text-decoration-none text-white-50">sandrine.agbcompta@gmail.com</a>
-                        </p>
+        
+                    <!-- Service Item 4 -->
+                    <div class="col">
+                        <div class="service-item new_box">
+                            <img src="images/sitting.jpg" alt="Personal Assistance" class="img-fluid rounded shadow">
+                            <div class="new_overlay">
+                                <h3>Personalized Assistance</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
+                                <a href="#" class="btn btn-light mt-3">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Service Item 5 -->
+                    <div class="col">
+                        <div class="service-item new_box">
+                            <img src="images/sitting.jpg" alt="Multilingual Support" class="img-fluid rounded shadow">
+                            <div class="new_overlay">
+                                <h3>Multilingual Support</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
+                                <a href="#" class="btn btn-light mt-3">Book Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
     </section>
+
+
     
-    
-    
-    <!-- Contact Section 
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center" data-aos="fade-up">Contact Us</h2>
-            <p class="text-center" data-aos="fade-up" data-aos-delay="100">
-                502 Palms Drive, Ayi Mensah Park, Accra - Ghana <br>
-                Email: sandrine.agbcompta@gmail.com <br>
-                Phone: +233 558 766 567
-            </p>
-            <div class="text-center">
-                <button class="btn btn-primary" data-aos="fade-up" data-aos-delay="200">Contact Us</button>
-            </div>
-        </div>
-    </section>
--->
 
     <!-- Footer -->
     <prestige-footer></prestige-footer>
@@ -931,21 +424,36 @@
 
     <!-- Font Awesome Icons (for icons in the footer) -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <!-- AOS JS for Scroll Animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+	<script>
+	$('#slider-area').owlCarousel({
+	   loop: true,
+	   autoplay: true,
+	   responsive: {
+	       0: {
+	           items: 1
+	       },
+	       600: {
+	           items: 1
+	       },
+	       1000: {
+	           items: 1
+	       }
+	   }
+	})        
+	</script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
