@@ -18,6 +18,30 @@
 	};
 	loader();
 
+	$(document).ready(function(){
+		$('#responsive-slider').owlCarousel({
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplayHoverPause: true,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+			items: 1,
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 1
+				},
+				1024: {
+					items: 1
+				}
+			}
+		});
+	});
+
 	/* 
 	$('#slider-area').owlCarousel({
 	   loop: true,

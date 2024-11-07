@@ -19,7 +19,6 @@
 
     <!-- Custom CSS for Navbar and Transitions -->
     <style>
-
         /*
         body {
             margin: 0;
@@ -162,94 +161,13 @@
 
         }
 
-        #responsive-slider {
-    width: 100%;
-}
-
-.slider-item {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.slider-text {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: #fff;
-    padding: 0 20px;
-}
-
-.slider-text h2 {
-    font-size: 3rem;
-    margin: 0;
-    color: #DAA520;
-}
-
-.slider-text h2 span {
-    color: coral;
-}
-
-.slider-text p {
-    font-size: 1.2rem;
-    margin-top: 15px;
-}
-
-.slider-text .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    color: #fff;
-    border: 2px solid #fff;
-    background-color: transparent;
-    text-transform: uppercase;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-.slider-text .btn:hover {
-    background-color: #DAA520;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .slider-item {
-        height: 70vh;
-    }
-
-    .slider-text h2 {
-        font-size: 2rem;
-    }
-
-    .slider-text p {
-        font-size: 1rem;
-    }
-}
-
-
-
     </style>
 </head>
 <body>
 
     <prestige-header></prestige-header>
 
-    <!-- Hero Section with Slider -->
-   
+    <!--New Hero Section-->
     <div id="responsive-slider" class="owl-carousel owl-theme">
         <div class="slider-item" style="background-image: url('images/flight.jpeg');">
             <div class="overlay"></div>
@@ -278,6 +196,21 @@
         </div>
     </div>
     
+
+    <!-- Hero Section with Slider 
+        <div id="wrapper">
+            <div class="owl-carousel" id="slider-area">
+                <div style="background-image: url(images/flight.jpeg)"></div>
+                <div style="background-image: url(images/bg_5.jpg)"></div>
+                <div style="background-image: url(images/contact_us.png)"></div>
+            </div>
+
+            <div class="slider-text">
+                <h2>Creative <span>Agency</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, beatae.</p><a href="about-us.html">learn More</a> <a class="btn" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    -->
 
 
     <!-- About Section -->
@@ -452,33 +385,6 @@
         }
     });
 </script>
-
-<script>
-$(document).ready(function(){
-    $('#responsive-slider').owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-        items: 1,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            1024: {
-                items: 1
-            }
-        }
-    });
-});
-</script>
-
     
 
 </body>
