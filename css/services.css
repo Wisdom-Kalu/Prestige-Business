@@ -473,9 +473,159 @@ About Section
 
 /* 
 ****************************************************************************************************
+Homepage: About Section
+****************************************************************************************************
+*/
+
+#about {
+    background-color: var(--color-1) !important;
+    color: var(--text-color) !important;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners to the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow around the image */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #about .col-md-6 {
+        text-align: center;
+    }
+
+    #about img {
+        margin: 0 auto 20px auto;
+        width: 80%; /* Smaller image on mobile devices */
+    }
+}
+
+#about h2, #services h2, #contact h2 {
+    color: #DAA520;
+}
+
+/* 
+****************************************************************************************************
+Homepage: Services
+****************************************************************************************************
+*/
+
+.new_box {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.new_box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.new_overlay {
+    width: 100%;
+    height: 31%;
+    background: linear-gradient(transparent,#1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.new_overlay h3 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--text-color);
+}
+
+.new_overlay a {
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+.new_box:hover img{
+    transform: scale(1.1);
+}
+
+
+.new_box:hover .new_overlay{
+    height: 100%;
+}
+
+/* Hover effect for larger screens */
+@media (max-width: 1024px) {
+
+    /* Initially hidden for mobile */
+    .new_overlay {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.7s ease;
+    }
+
+    /* Visible class for scroll effect on mobile */
+    .new_overlay.visible {
+        height: 100%;
+    }
+    .new_overlay {
+        height: 25%;
+        font-size: small;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .target {
+        padding-bottom: 20px !important;
+    }
+    
+}
+
+
+
+/* 
+****************************************************************************************************
 Services Section 
 ****************************************************************************************************
 */
+
+.btn-dez .btn {
+    background: transparent;
+    border: 1px solid white;
+    columns: var(--white-color);
+    color: var(--white-color);
+    width: 25%;
+    height: 10%;
+}
+
+.btn-dez .btn:hover {
+    background: var(--accent-color);
+    color: var(--black-color);
+}
 
 section {
 min-height: 100vh;

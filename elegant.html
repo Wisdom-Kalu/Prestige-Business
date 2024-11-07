@@ -19,227 +19,89 @@
 
     <!-- Custom CSS for Navbar and Transitions -->
     <style>
-        /*
-        body {
-            margin: 0;
-            /*font-family: 'Arial', sans-serif;
-            font-family: var(--body-font);
-            background-color: var(--color-1) !important;
-            color: #fff;
-            scroll-behavior: smooth;
-            transition: background-color 0.3s ease;
-        }
-*/
+
         .text-light {
             color: #f8f9fa !important; 
         }
-       
-        /* 
-        ****************************************************************************************************
-        Homepage: About Section
-        ****************************************************************************************************
-        */
 
-        #about {
-            background-color: var(--color-1) !important;
-            color: var(--text-color) !important;
-        }
-
-        #about img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px; /* Adds rounded corners to the image */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow around the image */
-            margin-bottom: 20px;
-        }
-
-        #about p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 768px) {
-            #about .col-md-6 {
-                text-align: center;
-            }
-
-            #about img {
-                margin: 0 auto 20px auto;
-                width: 80%; /* Smaller image on mobile devices */
-            }
-        }
-    
-        #about h2, #services h2, #contact h2 {
-            color: #DAA520;
-        }
-
-        /* 
-        ****************************************************************************************************
-        Homepage: Services
-        ****************************************************************************************************
-        */
-
-        .new_box {
-            border-radius: 10px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-        }
-        .new_box img{
+        #responsive-slider {
             width: 100%;
-            border-radius: 10px;
-            display: block;
-            transition: transform 0.5s;
+            overflow: hidden; /* Prevents overflow on mobile */
         }
-        .new_overlay {
-            width: 100%;
-            height: 31%;
-            background: linear-gradient(transparent,#1c1c1c 58%);
-            border-radius: 10px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            overflow: hidden;
+
+        .slider-item {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
-            padding: 0 40px;
-            text-align: center;
-            font-size: 14px;
-            transition: height 0.5s;
-        }
-        .new_overlay h3 {
-            font-weight: 500;
-            margin-bottom: 5px;
-            margin-top: 80%;
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 20px;
-            letter-spacing: 2px;
-            color: var(--text-color);
+            position: relative;
         }
 
-        .new_overlay a {
-            margin-top: 10px;
-            color: #262626;
-            text-decoration: none;
-            font-size: 14px;
-            background: #fff;
-            border-radius: 50px;
-            text-align: center;
-            padding: 5px 15px;
-        }
-        .new_box:hover img{
-            transform: scale(1.1);
-        }
-
-        
-        .new_box:hover .new_overlay{
+        .our_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
         }
-        
-        /* Hover effect for larger screens */
-        @media (max-width: 1024px) {
 
-            /* Initially hidden for mobile */
-            .new_overlay {
-                height: 0;
-                overflow: hidden;
-                transition: height 0.7s ease;
-            }
-
-            /* Visible class for scroll effect on mobile */
-            .new_overlay.visible {
-                height: 100%;
-            }
-            .new_overlay {
-                height: 25%;
-                font-size: small;
-                padding-bottom: 30px;
-            }
-
+        .slider-text {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
         }
 
 
-#responsive-slider {
-    width: 100%;
-    overflow: hidden; /* Prevents overflow on mobile */
-}
+        .slider-text h2 {
+            font-size: 3rem;
+            margin: 0;
+            color: #DAA520;
+        }
 
-.slider-item {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
+        .slider-text h2 span {
+            color: coral;
+        }
 
-.our_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
+        .slider-text p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
 
-.slider-text {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: #fff;
-    padding: 0 20px;
-}
+        .slider-text .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            margin-top: 20px;
+            color: #fff;
+            border: 2px solid #fff;
+            background-color: transparent;
+            text-transform: uppercase;
+            transition: 0.3s;
+            text-decoration: none;
+        }
 
+        .slider-text .btn:hover {
+            background-color: #DAA520;
+            color: #fff;
+        }
 
-.slider-text h2 {
-    font-size: 3rem;
-    margin: 0;
-    color: #DAA520;
-}
+        @media (max-width: 768px) {
+            .slider-item {
+                height: 70vh;
+            }
 
-.slider-text h2 span {
-    color: coral;
-}
+            .slider-text h2 {
+                font-size: 2rem;
+            }
 
-.slider-text p {
-    font-size: 1.2rem;
-    margin-top: 15px;
-}
-
-.slider-text .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    color: #fff;
-    border: 2px solid #fff;
-    background-color: transparent;
-    text-transform: uppercase;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-.slider-text .btn:hover {
-    background-color: #DAA520;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .slider-item {
-        height: 70vh;
-    }
-
-    .slider-text h2 {
-        font-size: 2rem;
-    }
-
-    .slider-text p {
-        font-size: 1rem;
-    }
-}
+            .slider-text p {
+                font-size: 1rem;
+            }
+        }
 
 
     </style>
@@ -253,18 +115,26 @@
         <div class="slider-item" style="background-image: url('images/flight.jpeg');">
             <div class="our_overlay"></div>
             <div class="slider-text">
-                <h2>Creative <span>Agency</span></h2>
+                <h2>Tailor-Made <span>Business Travel</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, beatae.</p>
                 <a href="about-us.html" class="btn">Learn More</a>
                 <a href="contact.html" class="btn">Contact Us</a>
             </div>
         </div>
-        <div class="slider-item" style="background-image: url('images/bg_5.jpg');">
+        <div class="slider-item" style="background-image: url('images/hotel.jpg');">
             <div class="our_overlay"></div>
             <div class="slider-text">
-                <h2>Innovative <span>Solutions</span></h2>
+                <h2>Luxury <span>Concierge</span></h2>
                 <p>Providing high-quality services to our clients with excellence.</p>
                 <a href="services.html" class="btn">Our Services</a>
+            </div>
+        </div>
+        <div class="slider-item" style="background-image: url('images/cruise_ship.webp');">
+            <div class="our_overlay"></div>
+            <div class="slider-text">
+                <h2>Luxury And <span>Leasure Travel</span></h2>
+                <p>Providing high-quality services to our clients with excellence.</p>
+                <a href="services.html" class="btn">Explore Our Travels</a>
             </div>
         </div>
         <div class="slider-item" style="background-image: url('images/contact_us.png');">
@@ -317,7 +187,7 @@
                     combining convenience, luxury, and personalized attention.
                 </p>
                 <div class="btn-dez">
-                    <a href="about-us.html">learn More</a>
+                    <a href="about-us.html" class="btn">Learn More</a>
                 </div>
                 
             </div>
@@ -335,9 +205,9 @@
                     <!-- Service Item 1 -->
                     <div class="col">
                         <div class="service-item new_box">
-                            <img src="images/sitting.jpg" alt="Business Travel" class="img-fluid rounded shadow">
+                            <img src="images/professional_travel.webp" alt="Business Travel" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3>Business Travel Organization</h3>
+                                <h3 class="target">Business Travel Organization</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
                                 <a href="#" class="btn btn-light mt-3">Book Now</a>
                             </div>
@@ -347,9 +217,9 @@
                     <!-- Service Item 2 -->
                     <div class="col">
                         <div class="service-item new_box">
-                            <img src="images/sitting.jpg" alt="Agenda Planning" class="img-fluid rounded shadow">
+                            <img src="images/prof_agenda.webp" alt="Agenda Planning" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3>Planning Professional Agendas</h3>
+                                <h3 class="target">Planning Professional Agendas</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
                                 <a href="#" class="btn btn-light mt-3">Book Now</a>
                             </div>
@@ -361,7 +231,7 @@
                         <div class="service-item new_box">
                             <img src="images/sitting.jpg" alt="Luxury Concierge" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3>Luxury Concierge Services</h3>
+                                <h3 class="target">Luxury Concierge Services</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
                                 <a href="#" class="btn btn-light mt-3">Book Now</a>
                             </div>
@@ -373,7 +243,7 @@
                         <div class="service-item new_box">
                             <img src="images/sitting.jpg" alt="Personal Assistance" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3>Personalized Assistance</h3>
+                                <h3 class="target">Personalized Assistance</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
                                 <a href="#" class="btn btn-light mt-3">Book Now</a>
                             </div>
@@ -385,7 +255,7 @@
                         <div class="service-item new_box">
                             <img src="images/sitting.jpg" alt="Multilingual Support" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3>Multilingual Support</h3>
+                                <h3 class="target">Multilingual Support</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
                                 <a href="#" class="btn btn-light mt-3">Book Now</a>
                             </div>

@@ -22,6 +22,8 @@ AOS.init({
             loop: true,
             autoplay: true,
             autoplayTimeout: 3000,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
             autoplayHoverPause: true,
             items: 1,
             responsive: {
