@@ -276,7 +276,7 @@ About Section
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .hero{
-        height: 30vh;
+        height: 60vh;
         text-align: center;
         font-size: small;
     }
