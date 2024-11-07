@@ -332,7 +332,7 @@ Owl Carousel
 }
 .slider-text a {
 	text-decoration: none;
-	background: coral;
+	background: var(--accent-color);
 	color: #fff;
 	display: inline-block;
 	padding: 12px 45px;
@@ -344,6 +344,24 @@ Owl Carousel
 }
 .slider-text a.btn {
 	background-color: transparent;
+}
+
+.btn-dez a {
+    text-decoration: none;
+	background: var(--accent-color);
+	color: #fff;
+	display: inline-block;
+	padding: 12px 45px;
+	margin: 15px;
+	text-transform: uppercase;
+	font-family: montserrat;
+	font-weight: 500;
+	border: 2px solid #fff;
+}
+
+.btn-dez a:hover {
+    background: transparent;
+    transform: scale(1.2s);
 }
 
 

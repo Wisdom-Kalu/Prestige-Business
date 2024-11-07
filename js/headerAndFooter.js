@@ -30,10 +30,10 @@ class PrestigeHeader extends HTMLElement {
                             <!-- Navbar links -->
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
                                 <li class="nav-item px-3">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="elegant.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link px-3" href="#">About</a>
+                                    <a class="nav-link px-3" href="about-us.html">About</a>
                                 </li>
 
                                 <!-- Dropdown Menu -->
@@ -42,16 +42,20 @@ class PrestigeHeader extends HTMLElement {
                                         Services
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Planning Professional Agendas</a></li>
+                                        <li><a class="dropdown-item" href="planning-agendas.html">Planning Professional Agendas</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Service 2</a></li>
+                                        <li><a class="dropdown-item" href="business-travel.html">Business Travel Organizatiom</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Service 3</a></li>
+                                        <li><a class="dropdown-item" href="luxury-concierge.html">Luxury Concierge</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="personalized-assistance.html">Personalized Assistance</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="multilingual-assistance.html">Multilingual Support</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item px-3">
-                                    <a class="nav-link" href="file:///Users/wisdomkalu/Desktop/prestige/elegant.html#contact">Contact</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                             </ul>
 
