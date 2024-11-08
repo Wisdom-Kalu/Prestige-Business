@@ -33,16 +33,18 @@ AOS.init({
             }
         });
 
-		$("#responsive-slider").on('drag.owl.carousel', function(event) {
+		$(".owl-carousel").on('drag.owl.carousel', function(event) {
 			$(document).on("touchmove", function(e) {
 				e.preventDefault();
 			});
 		});
 		
 		// enable scroll
-		$("#responsive-slider").on('dragged.owl.carousel', function(event) {
+		$(".owl-carousel").on('dragged.owl.carousel', function(event) {
 			$(document).off("touchmove");
 		});
+
+
 		
     });
 
