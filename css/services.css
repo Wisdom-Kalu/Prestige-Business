@@ -549,7 +549,7 @@ Homepage: Services
 }
 .new_overlay {
     width: 100%;
-    height: 31%;
+    height: 12%; /*played around with this too */
     background: linear-gradient(transparent,#1c1c1c 58%);
     border-radius: 10px;
     position: absolute;
@@ -568,7 +568,7 @@ Homepage: Services
 .new_overlay h3 {
     font-weight: 500;
     margin-bottom: 5px;
-    margin-top: 80%;
+    margin-top: 50%; /* I adjusted it so that the button can show on hover*/
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
@@ -585,6 +585,11 @@ Homepage: Services
     text-align: center;
     padding: 5px 15px;
 }
+
+.new_overlay .btn:hover{
+    cursor: pointer;
+}
+
 .new_box:hover img{
     transform: scale(1.1);
 }
