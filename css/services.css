@@ -93,13 +93,16 @@ Navbar
 
 @media (max-width: 768px) {
     .dark-background {
-        background-color: var(--gray-color);
+        background-color: var(--gray-color) !important;
     }
 }
 
+/*
 .dark-background {
-    background-color: rgba(0, 0, 0, 0.5) !important; 
+   /* background-color: rgba(0, 0, 0, 0.5) !important; 
+   background: yellow;
 }
+*/
 
 nav .navbar-nav .nav-item .nav-link {
     color: var(--text-color) !important; 
