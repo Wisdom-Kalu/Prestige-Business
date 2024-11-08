@@ -115,28 +115,28 @@ class PrestigeFooter extends HTMLElement{
                 <!-- Social Media Column -->
                 <div class="col-md-4 mb-4">
                     <h5 class="text-uppercase" style="color: var(--accent-color);">Follow Us</h5>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#" class="text-light text-decoration-none">
-                                <i class="fab fa-facebook fa-3x"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-light text-decoration-none">
-                                <i class="fab fa-twitter fa-3x"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-light text-decoration-none">
-                                <i class="fab fa-instagram fa-3x"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-light text-decoration-none">
-                                <i class="fab fa-linkedin fa-3x"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="social-icons">
+                        <!-- Facebook Icon -->
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" width="40" height="40">
+                        </a>
+                
+                        <!-- Twitter Icon -->
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Twitter" width="40" height="40">
+                        </a>
+                
+                        <!-- LinkedIn Icon -->
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" width="40" height="40">
+                        </a>
+                
+                        <!-- Instagram Icon -->
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40" height="40">
+                        </a>
+                    </div>
+            
                 </div>
             </div>
             
