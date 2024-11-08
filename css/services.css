@@ -91,18 +91,9 @@ Navbar
 
 }
 
-@media (max-width: 768px) {
-    .dark-background {
-        background-color: var(--gray-color) !important;
-    }
-}
-
-/*
 .dark-background {
-   /* background-color: rgba(0, 0, 0, 0.5) !important; 
-   background: yellow;
+    background-color: rgba(0, 0, 0, 0.5) !important; 
 }
-*/
 
 nav .navbar-nav .nav-item .nav-link {
     color: var(--text-color) !important; 
@@ -118,6 +109,20 @@ nav .navbar-nav .nav-item .nav-link:hover {
 .navbar, .offcanvas {
     background-color: rgba(0, 0, 0, 0.5) !important; 
 }
+
+
+
+@media (max-width: 991px) {
+
+    .navbar .offcanvas .offcanvas-header {
+        background-color: var(--black-color);
+    }
+
+    .navbar .offcanvas .offcanvas-body {
+        background-color: var(--black-color) !important;
+    }
+}
+
 
 
 .navbar .nav-link, .offcanvas .nav-link {

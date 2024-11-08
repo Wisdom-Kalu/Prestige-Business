@@ -14,7 +14,7 @@ class PrestigeHeader extends HTMLElement {
         </div>
        
         <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg sticky-top" styke="background-color: blue !important;">
+            <nav class="navbar navbar-expand-lg dark-background sticky-top">
                 <div class="container-fluid">
                     <a class="navbar-brand d-lg-none" href="elegant.html">Prestige</a>
                     <!-- Toggle button for Offcanvas (only shown on small screens) -->
@@ -25,7 +25,7 @@ class PrestigeHeader extends HTMLElement {
                     <!-- Offcanvas and Navbar Collapse for larger screens -->
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Prestige</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
