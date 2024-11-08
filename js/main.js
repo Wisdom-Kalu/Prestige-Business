@@ -1,6 +1,7 @@
 AOS.init({
     duration: 800,
-    easing: 'slide'
+    easing: 'slide',
+	once: true 
 });
 
 (function($) {
@@ -9,8 +10,8 @@ AOS.init({
     // Loader function
     var loader = function() {
         setTimeout(function() { 
-            if ($('#loader').length > 0) {
-                $('#loader').removeClass('show');
+            if ($('#my_loader').length > 0) {
+                $('#my_loader').removeClass('show');
             }
         }, 1);
     };
