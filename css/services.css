@@ -16,6 +16,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
 /*
 html {
     font-family: "Montserrat";
