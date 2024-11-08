@@ -69,7 +69,7 @@ AOS.init({
 
 })(jQuery);
 
-// Document ready for non-jQuery event listeners
+
 document.addEventListener("DOMContentLoaded", function() {
     // Toggle dropdown functionality
     const dropdown = document.querySelector('.dropdown');
