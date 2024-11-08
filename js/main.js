@@ -21,6 +21,8 @@ AOS.init({
         $("#responsive-slider").owlCarousel({
             loop: true,
             autoplay: true,
+			mouseDrag: false,
+        	touchDrag: false,
             autoplayTimeout: 3000,
 			animateOut: 'fadeOut',
 			animateIn: 'fadeIn',
