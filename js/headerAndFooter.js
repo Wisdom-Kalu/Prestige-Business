@@ -3,7 +3,7 @@ class PrestigeHeader extends HTMLElement {
         this.innerHTML = `
 
         <!-- Logo and Title Section -->
-        <div class="header-logo bg-dark">
+        <div class="header-logo" style="background-color: transparent;">
             <img src="images/logo-2.png" alt="Logo" class="logo-image">
             <!--
             <h1 class="header-title">Your Company Name</h1>
