@@ -820,7 +820,7 @@ Loader
 ****************************************************************************************************
 */
 
-#ftco-loader {
+#my_loader {
     position: fixed;
     width: 96px;
     height: 96px;
@@ -840,7 +840,7 @@ Loader
     transition: opacity .2s ease-out, visibility 0s linear .2s;
     z-index: 1000; }
   
-  #ftco-loader.fullscreen {
+  #my_loader.fullscreen {
     padding: 0;
     left: 0;
     top: 0;
@@ -854,14 +854,14 @@ Loader
     -webkit-box-shadow: none;
     box-shadow: none; }
   
-  #ftco-loader.show {
+  #my_loader.show {
     -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
     -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
     transition: opacity .4s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1; }
   
-  #ftco-loader .circular {
+  #my_loader .circular {
     -webkit-animation: loader-rotate 2s linear infinite;
     animation: loader-rotate 2s linear infinite;
     position: absolute;
@@ -872,7 +872,7 @@ Loader
     -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
   
-  #ftco-loader .path {
+  #my_loader .path {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
     -webkit-animation: loader-dash 1.5s ease-in-out infinite;
