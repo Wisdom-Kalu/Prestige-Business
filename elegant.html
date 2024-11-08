@@ -282,6 +282,17 @@
     <script src="js/headerAndFooter.js"></script>
     <script src="js/main.js"></script>
 
+    <script>
+        var owl = $('#responsive-slider');
+        owl.on('drag.owl.carousel', function(event) {
+            $('body').css('overflow', 'hidden');
+        });
+        
+        owl.on('dragged.owl.carousel', function(event) {
+            $('body').css('overflow', 'auto');
+        });
+
+    </script>
 
 </body>
 </html>

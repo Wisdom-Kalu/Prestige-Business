@@ -32,7 +32,20 @@ AOS.init({
                 1000: { items: 1 }
             }
         });
+
+		$("#responsive-slider").on('drag.owl.carousel', function(event) {
+			$(document).on("touchmove", function(e) {
+				e.preventDefault();
+			});
+		});
+		
+		// enable scroll
+		$("#responsive-slider").on('dragged.owl.carousel', function(event) {
+			$(document).off("touchmove");
+		});
+		
     });
+
 
     // Navbar hover dropdown
     $('nav .dropdown').hover(function() {
