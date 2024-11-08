@@ -88,6 +88,13 @@ Navbar
     display: block;
     margin-top: 0;
 }
+
+}
+
+@media (max-width: 768px) {
+    .dark-background {
+        background-color: var(--gray-color);
+    }
 }
 
 .dark-background {
