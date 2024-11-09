@@ -544,7 +544,9 @@ Homepage: Services
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
+
 .new_overlay {
     width: 100%;
     height: 12%; /*played around with this too */
