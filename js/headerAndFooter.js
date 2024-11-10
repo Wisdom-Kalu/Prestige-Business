@@ -44,15 +44,15 @@ class PrestigeHeader extends HTMLElement {
                                         Services
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="planning-agendas.html">Planning Professional Agendas</a></li>
+                                         <li><a class="dropdown-item" href="business-travel.html">Personalized Business Travel</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="business-travel.html">Business Travel Organizatiom</a></li>
+                                        <li><a class="dropdown-item" href="luxury-concierge.html">24/7 High-End Concierge Service</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="luxury-concierge.html">Luxury Concierge</a></li>
+                                        <li><a class="dropdown-item" href="luxury-travel-experiences.html">Luxury Travel and Unique Experiences</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="personalized-assistance.html">Personalized Assistance</a></li>
+                                        <li><a class="dropdown-item" href="business-and-event-management.html">Business and Private Event Management</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="multilingual-assistance.html">Multilingual Support</a></li>
+                                        <li><a class="dropdown-item" href="multilingual-assistance.html">Multilingual Assistance and Continuous Support</a></li>
                                     </ul>
                                 </li>
 
