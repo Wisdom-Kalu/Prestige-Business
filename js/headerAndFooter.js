@@ -100,7 +100,7 @@ class PrestigeFooter extends HTMLElement{
                         502 Palms Drive, Ayi Mensah Park <br>
                         Accra, Ghana <br>
                         Phone: +233 558 766 567 <br>
-                        Email: <a href="mailto:prestigebusinesstravel.com" class="text-decoration-none text-light">sandrine.agbcompta@gmail.com</a>
+                        Email: <a href="mailto:info@prestigebusinesstravel.com" class="text-decoration-none text-light">info@prestigebusinesstravel.com</a>
                     </p>
                 </div>
 
