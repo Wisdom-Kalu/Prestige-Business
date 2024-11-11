@@ -100,7 +100,7 @@ class PrestigeFooter extends HTMLElement{
                         502 Palms Drive, Ayi Mensah Park <br>
                         Accra, Ghana <br>
                         Phone: +233 558 766 567 <br>
-                        Email: <a href="mailto:sandrine.agbcompta@gmail.com" class="text-decoration-none text-light">sandrine.agbcompta@gmail.com</a>
+                        Email: <a href="mailto:prestigebusinesstravel.com" class="text-decoration-none text-light">sandrine.agbcompta@gmail.com</a>
                     </p>
                 </div>
 
@@ -108,10 +108,10 @@ class PrestigeFooter extends HTMLElement{
                 <div class="col-md-4 mb-4">
                     <h5 class="text-uppercase" style="color: var(--accent-color);">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Services</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about-us.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="business-travel.html" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
 
