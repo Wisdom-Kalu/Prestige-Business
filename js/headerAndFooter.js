@@ -4,7 +4,7 @@ class PrestigeHeader extends HTMLElement {
 
         <!-- Logo and Title Section -->
         <div class="header-logo" style="background-color: transparent;">
-            <a href="elegant.html">
+            <a href="index.html">
                 <img src="images/logo-2.png" alt="Logo" class="logo-image">
                 <!--
                 <h1 class="header-title">Your Company Name</h1>
@@ -16,7 +16,7 @@ class PrestigeHeader extends HTMLElement {
         <!-- Navbar -->
             <nav class="navbar navbar-expand-lg dark-background sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand d-lg-none" href="elegant.html">Prestige</a>
+                    <a class="navbar-brand d-lg-none" href="index.html">Prestige</a>
                     <!-- Toggle button for Offcanvas (only shown on small screens) -->
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@ class PrestigeHeader extends HTMLElement {
                             <!-- Navbar links -->
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
                                 <li class="nav-item px-3">
-                                    <a class="nav-link active" aria-current="page" href="elegant.html">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link px-3" href="about-us.html">About</a>
