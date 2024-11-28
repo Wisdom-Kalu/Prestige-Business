@@ -65,11 +65,11 @@ class PrestigeHeader extends HTMLElement {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link px-3" href="#">Corporate Solutions</a>
+                                    <a class="nav-link px-3" href="corporate-solutions.html">Corporate Solutions</a>
                                 </li>
 
                                 <li class="nav-item px-3">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
                                 </li>
                             </ul>
 

@@ -29,6 +29,12 @@ a:hover {
 
 p {
     font-size: larger;
+    color: var(--text-color)
+}
+
+ul > li {
+    color: var(--text-color);
+    font-size: large;
 }
 
 h2 {
@@ -686,7 +692,7 @@ justify-content: center;
 .left {
 width: 50%;
 height: 600px;
-background: url(../images/contact-us-image.jpg)
+background: url(../images/cotact-us-3.jpg)
 no-repeat center / cover;
 border-radius: 8px;
 }
