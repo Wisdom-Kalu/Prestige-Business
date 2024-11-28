@@ -57,7 +57,15 @@ class PrestigeHeader extends HTMLElement {
                                 </li>
 
                                 <li class="nav-item">
-                                     <a class="nav-link px-3" href="destinations.html">Destinations</a>
+                                     <a class="nav-link px-3" href="regions.html">Regions</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link px-3" href="membership-and-priviledges.html">Membership & Priviledges</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link px-3" href="#">Corporate Solutions</a>
                                 </li>
 
                                 <li class="nav-item px-3">
