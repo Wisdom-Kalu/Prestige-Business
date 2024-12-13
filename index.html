@@ -41,6 +41,16 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            width: 100%;
+        }
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video covers the entire area */
+            z-index: -1; /* Places the video behind the content */
         }
 
         .our_overlay {
@@ -49,7 +59,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
         .slider-text {
@@ -116,6 +126,24 @@
 
     <!--New Hero Section-->
     <div id="responsive-slider" class="owl-carousel owl-theme">
+        <div class="slider-item">
+            <!-- Background Video -->
+            <video autoplay muted loop playsinline preload="auto" class="background-video">
+                <source src="images/video/hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="our_overlay"></div>
+            <div class="slider-text">
+                <h2><span>Prestige</span> Business <span>Travel</span></h2>
+                <p>Experience tailored travel solutions for discerning professionals and luxury seekers in West Africa.</p>
+                <a href="about-us.html" class="btn">Learn More</a>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    
+    <!---
+    <div id="responsive-slider" class="owl-carousel owl-theme">
         <div class="slider-item" style="background-image: url('images/flight.jpeg');">
             <div class="our_overlay"></div>
             <div class="slider-text">
@@ -150,6 +178,7 @@
             </div>
         </div>
     </div>
+-->
     
 
     <!-- Hero Section with Slider 
@@ -207,7 +236,7 @@
                 <!-- Image Column -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="300">
                     <div class="card rounded-3">
-                        <img class="card-img-top" src="images/woman-holding-tablet-scrolling.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="images/complete-personalization.jpeg" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Complete Personalization</h5>
                           <p class="card-text">We believe each client is unique, so we design every journey based on the 
@@ -222,7 +251,7 @@
 
                 <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="300">
                     <div class="card">
-                        <img class="card-img-top" src="images/woman-laptop.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="images/high-end-conceirge.jpeg" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">High-End Concierge Service, Available 24/7</h5>
                           <p class="card-text">Our concierge services are available around the clock to anticipate and meet the needs of our most discerning clients, ensuring consistent service with the utmost discretion.</p>
@@ -233,7 +262,7 @@
 
                 <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="300">
                     <div class="card">
-                        <img class="card-img-top" src="images/busiess-meeting.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="images/expertise-and-networ.jpeg" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Expertise and Network of Luxury Partners</h5>
                           <p class="card-text">With an established network of luxury partners, we open the doors to prestigious locations and exclusive services, providing an exceptional experience.</p>
@@ -243,7 +272,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="300">
                     <div class="card">
-                        <img class="card-img-top" src="images/attention-to-details.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="images/attention-to-detail.jpeg" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Attention to Detail and Service Excellence</h5>
                           <p class="card-text">We meticulously oversee every aspect of your journey to provide an impeccable experience. Our teams are trained to anticipate needs and ensure every moment goes perfectly.</p>
@@ -254,7 +283,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="300">
                     <div class="card">
-                        <img class="card-img-top" src="images/absolute-discretion.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="images/absolute-confidentiality.jpeg" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Absolute Confidentiality and Discretion</h5>
                           <p class="card-text">Confidentiality is at the heart of our values. We ensure that every client feels secure and can relax in complete tranquility, with a strong commitment to discretion.</p>
@@ -264,7 +293,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="300">
                     <div class="card">
-                        <img class="card-img-top" src="images/support-centre.webp" alt="Card image cap">
+                        <img class="card-img-top" src="images/comprehesive-support.jpeg" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Comprehensive Support from Start to Finish</h5>
                           <p class="card-text">From planning to return, we provide continuous support to ensure every step goes smoothly. Our teams are available for real-time assistance and to coordinate various aspects of your</p>
@@ -320,7 +349,7 @@
                     <!-- Service Item 3 -->
                     <div class="col">
                         <div class="service-item new_box">
-                            <img src="images/private-jet-inside.jpeg" alt="Agenda Planning" class="img-fluid rounded shadow">
+                            <img src="images/private-jet-inside.jpeg" alt="Luxury Travel" class="img-fluid rounded shadow">
                             <div class="new_overlay">
                                 <h3 class="target">Luxury Travel and Unique Experiences</h3>
                                 <p>For clients seeking memorable travel experiences,
@@ -337,7 +366,7 @@
                     <!-- Service Item 4 -->
                     <div class="col">
                         <div class="service-item new_box">
-                            <img src="images/event_planning.jpg" alt="Personal Assistance" class="img-fluid rounded shadow">
+                            <img src="images/event_planning.jpg" alt="Event planning" class="img-fluid rounded shadow">
                             <div class="new_overlay">
                                 <h3 class="target">Business and Private Event Management</h3>
                                 <p>Whether it is planning your meetings, appointments or conferences, you can count on us to do an awesome job. We will plan these events painstakinly and with the utmost attention to details -even ones considered slight.</p>
