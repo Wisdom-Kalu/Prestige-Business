@@ -1,7 +1,7 @@
 :root {
     --color-1: #111;
     --text-color: #f0f0f0;
-    --accent-color: #DAA520;
+    --accent-color: #FFBD59;
     --white-color: hsl(170, 12%, 98%) !important;
     --gray-color: hsl(170, 4%, 60%) !important;
     --black-color: hsl(170, 12%, 8%) !important;
@@ -124,7 +124,7 @@ Navbar
 }
 
 .dark-background {
-    background-color: rgba(0, 0, 0, 0.5) !important; 
+    background-color: var(--accent-color) !important; 
 }
 
 nav .navbar-nav .nav-item .nav-link {
@@ -464,7 +464,7 @@ Hero Section
 
 .hero-content h1 {
     font-size: 3rem;
-    color: #DAA520;
+    color: var(--accent-color);
     margin-bottom: 20px;
 }
 
@@ -520,7 +520,7 @@ Homepage: About Section
 }
 
 #about h2, #services h2, #contact h2, #our-promise h2, #about_uss h2 {
-    color: #DAA520;
+    color: var(--accent-color);
 }
 
 .card-title {
@@ -995,7 +995,7 @@ footer {
     background-color: #111;
     padding: 20px;
     text-align: center;
-    color: #DAA520;
+    color: var(--accent-color);
 }
 .social-icons i {
     color: gray; 
