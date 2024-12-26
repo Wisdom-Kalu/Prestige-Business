@@ -74,16 +74,16 @@ class PrestigeHeader extends HTMLElement {
                             </ul>
 
                             <div class="btn-group mx-auto" role="group" aria-label="Language switcher">
-                                <input type="radio" class="btn-check" name="language" id="english" autocomplete="off" checked>
-                                <label class="btn btn-outline-light" for="english">
-                                    <img src="https://flagcdn.com/w20/gb.png" alt="English" class="me-1"> English
-                                </label>
-                            
-                                <input type="radio" class="btn-check" name="language" id="french" autocomplete="off">
-                                <label class="btn btn-outline-light" for="french">
-                                    <img src="https://flagcdn.com/w20/fr.png" alt="French" class="me-1"> Français
-                                </label>
-                            </div>
+                            <input type="radio" class="btn-check" name="language" id="english" autocomplete="off" checked>
+                            <label class="btn btn-outline-light" for="english">
+                                <img src="https://flagcdn.com/w20/gb.png" alt="English" class="me-1"> English
+                            </label>
+                        
+                            <input type="radio" class="btn-check" name="language" id="french" autocomplete="off">
+                            <label class="btn btn-outline-light" for="french">
+                                <img src="https://flagcdn.com/w20/fr.png" alt="French" class="me-1"> Français
+                            </label>
+                        </div>                        
                         </div>
                     </div>
                 </div>
