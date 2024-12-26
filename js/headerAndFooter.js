@@ -5,7 +5,7 @@ class PrestigeHeader extends HTMLElement {
         <!-- Logo and Title Section -->
         <div class="header-logo" style="background-color: transparent;">
             <a href="index.html">
-                <img src="images/logo/Logo_pbs.png" alt="Logo" class="logo-image">
+                <img src="images/logo/file.png" alt="Logo" class="logo-image">
                 <!--
                 <h1 class="header-title">Your Company Name</h1>
                 <p class="header-subtitle">Tagline or Subtitle</p>
