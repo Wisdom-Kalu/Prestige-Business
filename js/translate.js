@@ -4,7 +4,7 @@ let translations = {}; // Store the French translations
 async function loadFrenchTranslations() {
     try {
         if (Object.keys(translations).length === 0) {
-            const response = await fetch("fr.json");
+            const response = await fetch("js/fr.json");
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
