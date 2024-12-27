@@ -17,7 +17,7 @@ class PrestigeHeader extends HTMLElement {
         <!-- Navbar -->
             <nav class="navbar navbar-expand-lg dark-background sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand d-lg-none" href="index.html">Prestige Business Service</a>
+                    <a class="navbar-brand d-lg-none" href="index.html">Prestige Business Travel</a>
                     <!-- Toggle button for Offcanvas (only shown on small screens) -->
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -33,44 +33,44 @@ class PrestigeHeader extends HTMLElement {
                             <!-- Navbar links -->
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
                                 <li class="nav-item px-3">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a data-translate="home" class="nav-link active" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link px-3" href="about-us.html">About</a>
+                                    <a data-translate="about" class="nav-link px-3" href="about-us.html">About</a>
                                 </li>
 
                                 <!-- Dropdown Menu -->
                                 <li class="nav-item dropdown px-3">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a data-translate="services_label" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                         <li><a class="dropdown-item" href="business-travel.html">Personalized Business Travel</a></li>
+                                         <li><a data-translate="business_travel" class="dropdown-item" href="business-travel.html">Personalized Business Travel</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="luxury-concierge.html">24/7 High-End Concierge Service</a></li>
+                                        <li><a data-translate="concierge_service" class="dropdown-item" href="luxury-concierge.html">24/7 High-End Concierge Service</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="luxury-travel-experiences.html">Luxury Travel and Unique Experiences</a></li>
+                                        <li><a data-translate="luxury_travel" class="dropdown-item" href="luxury-travel-experiences.html">Luxury Travel and Unique Experiences</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="business-and-event-management.html">Business & Private Event Management</a></li>
+                                        <li><a data-translate="event_management" class="dropdown-item" href="business-and-event-management.html">Business & Private Event Management</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="multilingual-assistance.html">Multilingual and Continuous Assistance</a></li>
+                                        <li><a data-translate="multilingual_assistance" class="dropdown-item" href="multilingual-assistance.html">Multilingual and Continuous Assistance</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                     <a class="nav-link px-3" href="regions.html">Regions</a>
+                                     <a data-translate="regions" class="nav-link px-3" href="regions.html">Regions</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link px-3" href="membership-and-priviledges.html">Membership & Priviledges</a>
+                                    <a data-translate="membership" class="nav-link px-3" href="membership-and-priviledges.html">Membership & Priviledges</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link px-3" href="corporate-solutions.html">Corporate Solutions</a>
+                                    <a data-translate="corporate_solutions" class="nav-link px-3" href="corporate-solutions.html">Corporate Solutions</a>
                                 </li>
 
                                 <li class="nav-item px-3">
-                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                    <a data-translate="contact" class="nav-link" href="contact.html">Contact Us</a>
                                 </li>
                             </ul>
 
