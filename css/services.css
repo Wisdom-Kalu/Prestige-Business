@@ -212,10 +212,10 @@ nav .navbar-nav .nav-item .nav-link:hover {
 } 
 */
 
-.btn-close {
-    /* background-color: var(--accent-color) !important; */
+/* .btn-close {
+    /* background-color: var(--accent-color) !important; 
     background-color: var(--color-1) !important;
-}
+} */
 
 .dropdown-menu {
     /* background-color: rgba(0, 0, 0, 0.5);  */
