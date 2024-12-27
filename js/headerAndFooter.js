@@ -33,7 +33,7 @@ class PrestigeHeader extends HTMLElement {
                             <!-- Navbar links -->
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
                                 <li class="nav-item px-3">
-                                    <a data-translate="home" class="nav-link active" aria-current="page" href="index.html" style="font-weight: 900;">Home</a>
+                                    <a data-translate="home" class="nav-link active" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a data-translate="about" class="nav-link px-3" href="about-us.html">About</a>
