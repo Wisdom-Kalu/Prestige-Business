@@ -50,7 +50,7 @@ class PrestigeHeader extends HTMLElement {
                                         <li><hr class="dropdown-divider"></li>
                                         <li><a class="dropdown-item" href="luxury-travel-experiences.html">Luxury Travel and Unique Experiences</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="business-and-event-management.html">Business and Private Event Management</a></li>
+                                        <li><a class="dropdown-item" href="business-and-event-management.html">Business & Private Event Management</a></li>
                                         <li><hr class="dropdown-divider"></li>
                                         <li><a class="dropdown-item" href="multilingual-assistance.html">Multilingual and Continuous Assistance</a></li>
                                     </ul>
