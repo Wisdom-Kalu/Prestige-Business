@@ -103,6 +103,7 @@ Top Header Logo Area
 .navbar-brand {
     color: var(--color-1);
     font-family: 'Brown Sugar', sans-serif;
+    font-weight: 900 !important;
 }
 
 .header-logo {
