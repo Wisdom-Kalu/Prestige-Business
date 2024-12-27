@@ -103,7 +103,7 @@ class PrestigeFooter extends HTMLElement{
 
                 <!-- Address Column -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase" style="color: var(--accent-color);">Address</h5>
+                    <h5 data-translate="address_title" class="text-uppercase" style="color: var(--accent-color);">Address</h5>
                     <p class="text-light">
                         502 Palms Drive, Ayi Mensah Park <br>
                         Accra, Ghana <br>
@@ -114,19 +114,19 @@ class PrestigeFooter extends HTMLElement{
 
                 <!-- Quick Links Column -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase" style="color: var(--accent-color);">Quick Links</h5>
+                    <h5 data-translate="quick_links_title" class="text-uppercase" style="color: var(--accent-color);">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="about-us.html" class="text-light text-decoration-none">About Us</a></li>
-                        <li><a href="business-travel.html" class="text-light text-decoration-none">Services</a></li>
-                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                        <li data-translate="quick_link_home"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li data-translate="quick_link_about_us"><a href="about-us.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li data-translate="quick_link_services"><a href="business-travel.html" class="text-light text-decoration-none">Services</a></li>
+                        <li data-translate="quick_link_contact"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
 
     
                 <!-- Social Media Column -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase" style="color: var(--accent-color);">Follow Us</h5>
+                    <h5 data-translate="social_media_title" class="text-uppercase" style="color: var(--accent-color);">Follow Us</h5>
                     <div class="social-icons">
                         <!-- Facebook Icon -->
                         <a href="https://www.facebook.com" target="_blank">
@@ -155,7 +155,7 @@ class PrestigeFooter extends HTMLElement{
             <!-- Copyright Section -->
             <div class="text-center mt-4">
                 <hr class="bg-light">
-                <p class="mb-0">&copy; 2024 Prestige Business Travel. All Rights Reserved.</p>
+                <p data-translate="copyright_text" class="mb-0">&copy; 2024 Prestige Business Travel. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

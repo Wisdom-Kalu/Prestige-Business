@@ -14,16 +14,16 @@
     <link rel="stylesheet" href="css/services.css">
     
 </head>
-<body>
 
+<body data-page="business-and-event-mgt">
 <!-- Logo, navbar and Header Section -->
 <prestige-header></prestige-header>
 
     <!-- Hero Section -->
     <div class="hero" style="background-image: url('images/sitting-and-drinking-around-table.jpeg');">
         <div class="hero-content">
-            <h1>Business and Private Event Management</h1>
-            <p>Leave the Planning and Organization to Us</p>
+            <h1 data-translate="hero_title">Business and Private Event Management</h1>
+            <p data-translate="hero_subtitle">Leave the Planning and Organization to Us</p>
         </div>
     </div>
     
@@ -31,7 +31,7 @@
     <!-- Services Section -->
     <section id="included-services" class="bg-dark py-5">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">What We Offer</h2>
+            <h2 data-translate="what_we_offer" class="text-center mb-5" data-aos="fade-up">What We Offer</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Bootstrap grid system with responsive column count -->
                 <div class="col">
                     <div class="individual_card">
@@ -39,8 +39,8 @@
                             <img src="images/complete-planning-and-coordination-two.jpeg" alt="mountain img">
                         </div>
                         <div class="all-card-content">
-                            <h1 class="all-card-heading">Complete Planning and Coordination</h1>
-                            <p class="card-text">Planning and execution of every logistical aspect of the event, including venue selection, invitations, and guest management.</p>
+                            <h1 data-translate="complete_planning_title" class="all-card-heading">Complete Planning and Coordination</h1>
+                            <p data-translate="complete_planning_text" class="card-text">Planning and execution of every logistical aspect of the event, including venue selection, invitations, and guest management.</p>
                         </div>
                     </div>
                 </div>
@@ -51,8 +51,8 @@
                             <img src="images/selection-of-prestigious.jpeg" alt="mountain img">
                         </div>
                         <div class="all-card-content">
-                            <h1 class="all-card-heading">Selection of Prestigious Venues</h1>
-                            <p class="card-text">Access to elite venues (5-star hotels, villas, luxury conference centers) suitable for meetings, conferences, or private celebrations.</p>
+                            <h1 data-translate="prestigious_venues_title" class="all-card-heading">Selection of Prestigious Venues</h1>
+                            <p data-translate="prestigious_venues_text" class="card-text">Access to elite venues (5-star hotels, villas, luxury conference centers) suitable for meetings, conferences, or private celebrations.</p>
                         </div>
                     </div>
                 </div>
@@ -63,8 +63,8 @@
                             <img src="images/hospitality-and-security.jpeg" alt="mountain img">
                         </div>
                         <div class="all-card-content">
-                            <h1 class="all-card-heading">Personalized Hospitality and Security Services</h1>
-                            <p class="card-text">Arrangement of guest reception, transfers, and security with special attention to ensure a comfortable and secure experience.</p>
+                            <h1 data-translate="hospitality_title" class="all-card-heading">Personalized Hospitality and Security Services</h1>
+                            <p data-translate="hospitality_text" class="card-text">Arrangement of guest reception, transfers, and security with special attention to ensure a comfortable and secure experience.</p>
                         </div>
                     </div>
                 </div>
@@ -75,8 +75,8 @@
                             <img src="images/gourmet.jpeg" alt="mountain img">
                         </div>
                         <div class="all-card-content">
-                            <h1 class="all-card-heading">Gourmet catering and high-level culinary experience</h1>
-                            <p class="card-text">Coordination of gastronomic menus or buffets, crafted by renowned chefs and adapted to guests' dietary preferences.</p>
+                            <h1 data-translate="gourmet_title" class="all-card-heading">Gourmet catering and high-level culinary experience</h1>
+                            <p data-translate="gourmet_text" class="card-text">Coordination of gastronomic menus or buffets, crafted by renowned chefs and adapted to guests' dietary preferences.</p>
                         </div>
                     </div>
                 </div>
@@ -87,8 +87,8 @@
                             <img src="images/custom-decor.jpeg" alt="mountain img">
                         </div>
                         <div class="all-card-content">
-                            <h1 class="all-card-heading">Custom décor and ambiance</h1>
-                            <p class="card-text">Design and setup of elegant and sophisticated décor, with personalized themes to reflect the event’s image or client’s wishes.</p>
+                            <h1 data-translate="custom_decor_title" class="all-card-heading">Custom décor and ambiance</h1>
+                            <p data-translate="custom_decor_text" class="card-text">Design and setup of elegant and sophisticated décor, with personalized themes to reflect the event’s image or client’s wishes.</p>
                         </div>
                     </div>
                 </div>
@@ -102,9 +102,9 @@
             <div class="left"></div>
             <div class="right">
             <div class="content">
-                <h1>Want to Book This Service?</h1>
-                <p>Please get in touch with us today, and one of our seasoned agents will attend to you in no time.</p>
-                <a href="contact.html" class="btn">Contact Us Today</a>
+                <h1 data-translate="want_to_book">Want to Book This Service?</h1>
+                <p data-translate="contact_today">Please get in touch with us today, and one of our seasoned agents will attend to you in no time.</p>
+                <a data-translate="contact_button" href="contact.html" class="btn">Contact Us Today</a>
             </div>
             </div>
         </div>
@@ -115,6 +115,8 @@
 <prestige-footer></prestige-footer>
 
 <script src="js/headerAndFooter.js"></script>
+<script src="js/translate.js"></script>
+
 
 <!-- Bootstrap JS bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

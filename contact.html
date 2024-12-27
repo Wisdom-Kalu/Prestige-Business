@@ -68,7 +68,8 @@
     </style>
     
 </head>
-<body>
+
+<body data-page="contact">
 
 <!-- Navbar -->
 <prestige-header></prestige-header>
@@ -76,8 +77,8 @@
     <!-- Hero Section -->
     <div class="hero" style="background-image: url('images/contact_us.png');">
         <div class="hero-content">
-            <h1>Contact Us</h1>
-            <p>We are here for you - always!</p>
+            <h1 data-translate="hero_title">Contact Us</h1>
+            <p data-translate="hero_subtitle">We are here for you - always!</p>
         </div>
     </div>
     
@@ -85,7 +86,7 @@
    <!--Contact Section-->
    <div class="py-5 my-5" id="contact">   
     <div class="container">
-        <h5 class="text-center mb-5" data-aos="fade-up" data-aos-delay="100" style="color: var(--accent-color);">
+        <h5 data-translate="contact_message" class="text-center mb-5" data-aos="fade-up" data-aos-delay="100" style="color: var(--accent-color);">
             If you got any questions, please do not hesitate to send us a message.
         </h5>
         <div class="row text-center mt-5 mb-5">
@@ -93,8 +94,8 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="d-flex flex-column align-items-center">
                     <i class="fas fa-map-marker-alt fa-2x mb-3" style="color: gray;"></i>
-                    <h5 class="fw-bold text-light">Address:</h5>
-                    <p class="text-white-50" style="color: gray;">502 Palms Drive, Ayi Mensah Park, Accra, Ghana</p>
+                    <h5 data-translate="address_label" class="fw-bold text-light">Address:</h5>
+                    <p data-translate="address_text" class="text-white-50" style="color: gray;">502 Palms Drive, Ayi Mensah Park, Accra, Ghana</p>
                 </div>
             </div>
             <!-- Divider -->
@@ -105,8 +106,8 @@
             <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="d-flex flex-column align-items-center">
                     <i class="fas fa-phone fa-2x mb-3" style="color: gray;"></i>
-                    <h5 class="fw-bold text-light">Phone:</h5>
-                    <p class="text-white-50" style="color: gray;">+233 558 766 567</p>
+                    <h5 data-translate="phone_label" class="fw-bold text-light">Phone:</h5>
+                    <p data-translate="phone_text" class="text-white-50" style="color: gray;">+233 558 766 567</p>
                 </div>
             </div>
             <!-- Divider -->
@@ -117,8 +118,8 @@
             <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
                 <div class="d-flex flex-column align-items-center">
                     <i class="fas fa-envelope fa-2x mb-3" style="color: gray;"></i>
-                    <h5 class="fw-bold text-light">Email:</h5>
-                    <p class="text-white" style="font-weight: 500;">
+                    <h5 data-translate="email_label" class="fw-bold text-light">Email:</h5>
+                    <p data-translate="email_text" class="text-white" style="font-weight: 500;">
                         <a href="mailto:info@prestigebusinesstravel.com" class="text-decoration-none text-white-50">info@prestigebusinesstravel.com</a>
                     </p>
                 </div>
@@ -128,7 +129,7 @@
         <div class="row text-center align-items-center justify-content-center">
              <!-- Social Media Column -->
              <div class="col-md-4 mb-4">
-                <h4 class="text-uppercase my-4" style="color: var(--accent-color);">Reach Out on social media</h4>
+                <h4 data-translate="social_media_title_" class="text-uppercase my-4" style="color: var(--accent-color);">Reach Out on social media</h4>
                     <div class="social-icons">
                         <!-- Facebook Icon -->
                         <a class="px-2" href="https://www.facebook.com" target="_blank">
@@ -157,36 +158,36 @@
 
 <div class="py-5" style="background: var(--black-color);">
     <div class="container mb-5">
-        <h2 class="my-5 text-center">FAQ</h2>
+        <h2 data-translate="faq_title" class="my-5 text-center">FAQ</h2>
         <div class="accordion" id="accordionExample">
 
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button data-translate="faq_1_question" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     1. How can I book a trip with Prestige Business Travel?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  You can book directly by contacting us by email at info@prestigebusinesstravel.com, or by phone. A dedicated advisor will guide you through the entire process to create a bespoke journey that meets your expectations.
+                <div data-translate="faq_1_answer" class="accordion-body">
+                  You can book directly by contacting us by email at info@prestigebusinesstravel.com, or by phone at +233 558 766 567. A dedicated advisor will guide you through the entire process to create a bespoke journey that meets your expectations.
                 </div>
               </div>
             </div>
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+                  <button data-translate="faq_2_question" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
                     2. What is the booking process?
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <ol>
-                        <li><strong>Initial Contact:</strong>Reach out to us by email, phone, or online form to share your travel needs and preferences. An advisor will then be assigned to assist you.</li>
-                        <li><strong>Customized Proposal:</strong> After assessing your requirements, we will send you a personalized travel proposal, including accommodation, transportation, and unique experiences.</li>
-                        <li><strong>Confirmation and Secure Payment::</strong>Once you have approved the details of your trip, we proceed with confirmation and provide secure payment options to finalize your booking.</li>
-                        <li><strong>Pre-Trip Support and Preparation:</strong>Our team remains available to answer all your questions and to arrange the final details before your departure.</li>
-                        <li><strong>Support During Your Trip:</strong> A dedicated advisor is available 24/7 for any request or change during your stay, ensuring a smooth and worry-free experience.</li>
+                        <li data-translate="faq_2_answer_one"><strong>Initial Contact:</strong> Reach out to us by email, phone, or online form to share your travel needs and preferences. An advisor will then be assigned to assist you.</li>
+                        <li data-translate="faq_2_answer_two"><strong>Customized Proposal: </strong>After assessing your requirements, we will send you a personalized travel proposal, including accommodation, transportation, and unique experiences.</li>
+                        <li data-translate="faq_2_answer_three"><strong>Confirmation and Secure Payment: </strong>Once you have approved the details of your trip, we proceed with confirmation and provide secure payment options to finalize your booking.</li>
+                        <li data-translate="faq_2_answer_four"><strong>Pre-Trip Support and Preparation: </strong>Our team remains available to answer all your questions and to arrange the final details before your departure.</li>
+                        <li data-translate="faq_2_answer_five"><strong>Support During Your Trip:</strong> A dedicated advisor is available 24/7 for any request or change during your stay, ensuring a smooth and worry-free experience.</li>
                     </ol>
                   </div>
                 </div>
@@ -194,12 +195,12 @@
 
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                <button data-translate="faq_3_question" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
                     3. What services are included in your concierge offering?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div data-translate="faq_3_answer" class="accordion-body">
                   Our concierge service includes a complete range of services, from private transport and luxury hotel bookings to exclusive experiences and 24/7 support for any specific requests you may have.
                 </div>
               </div>
@@ -207,12 +208,12 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  <button data-translate="faq_4_question" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                     4. Is my payment secure?
                   </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                  <div data-translate="faq_4_answer" class="accordion-body">
                     Yes, we take the security of your transactions very seriously. Our online payments are secured and processed through encrypted payment platforms to ensure maximum safety for every transaction.
                   </div>
                 </div>
@@ -221,12 +222,12 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                  <button data-translate="faq_5_question" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                     5. Can I modify or cancel a booking?
                   </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                  <div data-translate="faq_5_answer" class="accordion-body">
                     We understand that plans may change. Depending on our partners' booking conditions, we will do our best to offer flexible modification or cancellation options, and an advisor will assist you in adjusting your bookings.
                   </div>
                 </div>
@@ -235,12 +236,12 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                  <button data-translate="faq_6_question" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
                     6. What types of travel do you offer?
                   </button>
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                  <div data-translate="faq_6_answer" class="accordion-body">
                     We provide business, luxury, and leisure travel options with personalized concierge services. Whether you’re planning a business trip or a luxurious getaway, we have services tailored to meet your needs.
                   </div>
                 </div>
@@ -249,12 +250,12 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSeven">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                  <button data-translate="faq_7_question" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
                     7. What transportation options are available?
                   </button>
                 </h2>
                 <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                  <div data-translate="faq_7_answer" class="accordion-body">
                     We offer a variety of transportation options, including private jets, helicopters, limousine transfers, and customized transport services to meet all your requirements.
                   </div>
                 </div>
@@ -271,6 +272,7 @@
 
 
 <script src="js/headerAndFooter.js"></script>
+<script src="js/translate.js"></script>
 
 <!-- Bootstrap JS bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

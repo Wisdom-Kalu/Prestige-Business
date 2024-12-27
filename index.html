@@ -124,7 +124,8 @@
 
     </style>
 </head>
-<body>
+
+<body data-page="homepage">
 
     <prestige-header></prestige-header>
 
@@ -139,9 +140,9 @@
             <div class="our_overlay"></div>
             <div class="slider-text">
                 <h2><span>Prestige</span> Business <span>Travel</span></h2>
-                <p>Experience tailored travel solutions for discerning professionals and luxury seekers.</p>
-                <a href="about-us.html" class="btn">Learn More</a>
-                <a href="contact.html" class="btn">Contact Us</a>
+                <p data-translate="hero_subtitle">Experience tailored travel solutions for discerning professionals and luxury seekers.</p>
+                <a data-translate="hero_btn_learn_more" href="about-us.html" class="btn">Learn More</a>
+                <a data-translate="hero_btn_contact_us" href="contact.html" class="btn">Contact Us</a>
             </div>
         </div>
     </div>
@@ -183,27 +184,11 @@
         </div>
     </div>
 -->
-    
-
-    <!-- Hero Section with Slider 
-        <div id="wrapper">
-            <div class="owl-carousel" id="slider-area">
-                <div style="background-image: url(images/flight.jpeg)"></div>
-                <div style="background-image: url(images/bg_5.jpg)"></div>
-                <div style="background-image: url(images/contact_us.png)"></div>
-            </div>
-
-            <div class="slider-text">
-                <h2>Creative <span>Agency</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, beatae.</p><a href="about-us.html">learn More</a> <a class="btn" href="contact.html">Contact Us</a>
-            </div>
-        </div>
-    -->
 
     <!-- About Section -->
     <section id="about" class="py-5" style="overflow-x: hidden;">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">About Us</h2>
+            <h2 data-translate="about_title" class="text-center mb-5" data-aos="fade-up">About Us</h2>
             <div class="row g-5 align-items-start">
                 <!-- Image Column -->
                 <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
@@ -211,19 +196,19 @@
                 </div>
                 <!-- Text Column -->
                 <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="200">
-                    <p style="text-align: justify;">
+                    <p data-translate="about_text_one" style="text-align: justify;">
                         Prestige Business Travel is your dedicated partner for personalized business and luxury travel. 
                         We craft tailor-made experiences, combining high-end concierge services with exclusive offerings to make 
                         every journey exceptional. Let us orchestrate your travels with meticulous attention to detail, perfectly 
                         aligned with your expectations and aspirations.
                     </p>
-                    <p style="text-align: justify;">
+                    <p data-translate="about_text_two" style="text-align: justify;">
                         With over 15 years of experience in business management, we bring expertise and a passion for 
                         delivering the finest experiences. Our local knowledge and dedication ensure each trip is seamless and 
                         memorable. Let us craft your perfect business trip, combining convenience, luxury, and personalized attention.
                     </p>
                     <div class="btn-dez">
-                        <a href="about-us.html" class="btn">Learn More</a>
+                        <a data-translate="about_btn_learn_more" href="about-us.html" class="btn">Learn More</a>
                     </div>
                     
                 </div>
@@ -235,15 +220,15 @@
     <!--Our Promise-->
     <section id="our-promise" class="py-5 bg-dark" style="overflow-x: hidden;">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">The Prestige Promise: Bespoke Excellence in Every Detail</h2>
+            <h2 data-translate="promise_title" class="text-center mb-5" data-aos="fade-up">The Prestige Promise: Bespoke Excellence in Every Detail</h2>
             <div class="row g-5 align-items-top"> <!-- Bootstrap's row with gutter spacing -->
                 <!-- Image Column -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="300">
                     <div class="card rounded-3">
                         <img class="card-img-top" src="images/complete-personalization.jpeg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Complete Personalization</h5>
-                          <p class="card-text">We believe each client is unique, so we design every journey based on the 
+                          <h5 data-translate="promise_card_1_title" class="card-title">Complete Personalization</h5>
+                          <p data-translate="promise_card_1_text" class="card-text">We believe each client is unique, so we design every journey based on the 
                             specific preferences and expectations of our clients. From the itinerary to the smallest details,
                              everything is tailored to meet your requirements.</p>
                              <p>Examples: Personalized selection of rooms and suites, recommendations for exclusive restaurants, and creation of custom itineraries.</p>
@@ -257,9 +242,9 @@
                     <div class="card">
                         <img class="card-img-top" src="images/high-end-conceirge.jpeg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">High-End Concierge Service, Available 24/7</h5>
-                          <p class="card-text">Our concierge services are available around the clock to anticipate and meet the needs of our most discerning clients, ensuring consistent service with the utmost discretion.</p>
-                          <p>Examples: Access to private events, last-minute reservations at exclusive venues, VIP airport services, and personal assistance for any special requests.</p>
+                          <h5 data-translate="promise_card_2_title" class="card-title">High-End Concierge Service, Available 24/7</h5>
+                          <p data-translate="promise_card_2_text_one" class="card-text">Our concierge services are available around the clock to anticipate and meet the needs of our most discerning clients, ensuring consistent service with the utmost discretion.</p>
+                          <p data-translate="promise_card_2_text_two">Examples: Access to private events, last-minute reservations at exclusive venues, VIP airport services, and personal assistance for any special requests.</p>
                         </div>
                     </div>
                 </div>
@@ -268,9 +253,9 @@
                     <div class="card">
                         <img class="card-img-top" src="images/expertise-and-networ.jpeg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Expertise and Network of Luxury Partners</h5>
-                          <p class="card-text">With an established network of luxury partners, we open the doors to prestigious locations and exclusive services, providing an exceptional experience.</p>
-                          <p>Examples: Partnerships with 5-star hotels, private airlines, and event agencies to organize unforgettable experiences (private safaris, cultural excursions, and luxury cruises).</p>
+                          <h5 data-translate="promise_card_3_title" class="card-title">Expertise and Network of Luxury Partners</h5>
+                          <p data-translate="promise_card_3_text_one" class="card-text">With an established network of luxury partners, we open the doors to prestigious locations and exclusive services, providing an exceptional experience.</p>
+                          <p data-translate="promise_card_3_text_two"> Examples: Partnerships with 5-star hotels, private airlines, and event agencies to organize unforgettable experiences (private safaris, cultural excursions, and luxury cruises).</p>
                         </div>
                     </div>
                 </div>
@@ -278,9 +263,9 @@
                     <div class="card">
                         <img class="card-img-top" src="images/attention-to-detail.jpeg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Attention to Detail and Service Excellence</h5>
-                          <p class="card-text">We meticulously oversee every aspect of your journey to provide an impeccable experience. Our teams are trained to anticipate needs and ensure every moment goes perfectly.</p>
-                          <p>Management of personal preferences (meal types, private transfers), constant follow-up during the journey, and assistance with practical details (formalities, health, and safety).
+                          <h5 data-translate="promise_card_4_title" class="card-title">Attention to Detail and Service Excellence</h5>
+                          <p data-translate="promise_card_4_text_one" class="card-text">We meticulously oversee every aspect of your journey to provide an impeccable experience. Our teams are trained to anticipate needs and ensure every moment goes perfectly.</p>
+                          <p data-translate="promise_card_4_text_two">Management of personal preferences (meal types, private transfers), constant follow-up during the journey, and assistance with practical details (formalities, health, and safety).
                         </p>
                         </div>
                     </div>
@@ -289,9 +274,9 @@
                     <div class="card">
                         <img class="card-img-top" src="images/absolute-confidentiality.jpeg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Absolute Confidentiality and Discretion</h5>
-                          <p class="card-text">Confidentiality is at the heart of our values. We ensure that every client feels secure and can relax in complete tranquility, with a strong commitment to discretion.</p>
-                          <p>Examples: Rigorous management of your personal information, assistance for anonymous travel, and private spaces in accommodations.</p>
+                          <h5 data-translate="promise_card_5_title" class="card-title">Absolute Confidentiality and Discretion</h5>
+                          <p data-translate="promise_card_5_text_one" class="card-text">Confidentiality is at the heart of our values. We ensure that every client feels secure and can relax in complete tranquility, with a strong commitment to discretion.</p>
+                          <p data-translate="promise_card_5_text_two">Examples: Rigorous management of your personal information, assistance for anonymous travel, and private spaces in accommodations.</p>
                         </div>
                     </div>
                 </div>
@@ -299,9 +284,9 @@
                     <div class="card">
                         <img class="card-img-top" src="images/comprehesive-support.jpeg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Comprehensive Support from Start to Finish</h5>
-                          <p class="card-text">From planning to return, we provide continuous support to ensure every step goes smoothly. Our teams are available for real-time assistance and to coordinate various aspects of your</p>
-                          <p>Examples: Coordination of transfers and accommodations, itinerary management, and personalized follow-up to ensure a seamless and harmonious experience.</p>
+                          <h5 data-translate="promise_card_6_title" class="card-title">Comprehensive Support from Start to Finish</h5>
+                          <p data-translate="promise_card_6_text_one" class="card-text">From planning to return, we provide continuous support to ensure every step goes smoothly. Our teams are available for real-time assistance and to coordinate various aspects of your</p>
+                          <p data-translate="promise_card_6_text_two">Examples: Coordination of transfers and accommodations, itinerary management, and personalized follow-up to ensure a seamless and harmonious experience.</p>
                         </div>
                     </div>
                 </div>
@@ -315,8 +300,8 @@
     <!-- Services Section -->
     <section id="services" class="py-5" style="overflow-x: hidden;">
             <div class="container">
-                <h2 class="text-center mb-3" data-aos="fade-up">Services</h2>
-                <p class="text-center py-4" style="font-size: large;">Explore a world of tailored travel solutions designed with your needs in mind. Prestige Business Travel offers a 
+                <h2 data-translate="services_title" class="text-center mb-3" data-aos="fade-up">Services</h2>
+                <p data-translate="services_description" class="text-center py-4" style="font-size: large;">Explore a world of tailored travel solutions designed with your needs in mind. Prestige Business Travel offers a 
                     suite of services that ensure every aspect of your journey is managed with precision, care, and luxury.</p>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Bootstrap grid system with responsive column count -->
                     <!-- Service Item 1 -->
@@ -324,13 +309,13 @@
                         <div class="service-item new_box">
                             <img src="images/business_travel.jpg" alt="Business Travel" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3 class="target">Personalized Business Travel</h3>
-                                <p>From private jet rentals to premium hotel accommodations, our business travel services 
+                                <h3 data-translate="service_item_1_title" class="target">Personalized Business Travel</h3>
+                                <p data-translate="service_item_1_text">From private jet rentals to premium hotel accommodations, our business travel services 
                                     are customized to meet the demands of busy professionals. We handle complex 
                                     schedules and adapt to last-minute changes, so you can focus on what matters 
                                     most—your business.
                                     </p>
-                                <a href="business-travel.html" class="btn btn-light mt-3">learn More</a>
+                                <a data-translate="service_item_1_btn" href="business-travel.html" class="btn btn-light mt-3">learn More</a>
                             </div>
                         </div>
                     </div>
@@ -340,11 +325,11 @@
                         <div class="service-item new_box">
                             <img src="images/business_travel_2.jpg" alt="Luxury Concierge" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3 class="target">24/7 High-End Concierge Service</h3>
-                                <p>Our concierge service is dedicated to fulfilling even the most exclusive requests. Whether you’re booking a Michelin-starred 
+                                <h3 data-translate="service_item_2_title" class="target">24/7 High-End Concierge Service</h3>
+                                <p data-translate="service_item_2_text">Our concierge service is dedicated to fulfilling even the most exclusive requests. Whether you’re booking a Michelin-starred 
                                     restaurant, need a personal chauffeur, or want VIP access to cultural events, we make it happen with complete discretion and 
                                     care.</p>
-                                <a href="luxury-concierge.html" class="btn btn-light mt-3">Learn More</a>
+                                <a data-translate="service_item_2_btn" href="luxury-concierge.html" class="btn btn-light mt-3">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -355,14 +340,14 @@
                         <div class="service-item new_box">
                             <img src="images/private-jet-inside.jpeg" alt="Luxury Travel" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3 class="target">Luxury Travel and Unique Experiences</h3>
-                                <p>For clients seeking memorable travel experiences,
+                                <h3 data-translate="service_item_3_title" class="target">Luxury Travel and Unique Experiences</h3>
+                                <p data-translate="service_item_3_text">For clients seeking memorable travel experiences,
                                     we create bespoke luxury and leisure stays. Each
                                     journey is designed to offer unique moments, with
                                     personalized itineraries that include exclusive
                                     excursions, stays in prestigious locations, and
                                     first-class services.</p>
-                                <a href="luxury-travel-experiences.html" class="btn btn-light mt-3">Learn More</a>
+                                <a data-translate="service_item_3_btn" href="luxury-travel-experiences.html" class="btn btn-light mt-3">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -372,9 +357,9 @@
                         <div class="service-item new_box">
                             <img src="images/event_planning-2.jpeg" alt="Event planning" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3 class="target">Business and Private Event Management</h3>
-                                <p>Whether it is planning your meetings, appointments or conferences, you can count on us to do an awesome job. We will plan these events painstakinly and with the utmost attention to details -even ones considered slight.</p>
-                                <a href="business-and-event-management.html" class="btn btn-light mt-3">Learn More</a>
+                                <h3 data-translate="service_item_4_title" class="target">Business and Private Event Management</h3>
+                                <p data-translate="service_item_4_text">Whether it is planning your meetings, appointments or conferences, you can count on us to do an awesome job. We will plan these events painstakinly and with the utmost attention to details -even ones considered slight.</p>
+                                <a data-translate="service_item_4_btn" href="business-and-event-management.html" class="btn btn-light mt-3">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -384,12 +369,12 @@
                         <div class="service-item new_box">
                             <img src="images/support_real-2.jpg" alt="Multilingual Support" class="img-fluid rounded shadow">
                             <div class="new_overlay">
-                                <h3 class="target">Multilingual Assistance and Continuous Support</h3>
-                                <p>In a world where seamless communication is key, our Multilingual Assistance service offers 
+                                <h3 data-translate="service_item_5_title" class="target">Multilingual Assistance and Continuous Support</h3>
+                                <p data-translate="service_item_5_text">In a world where seamless communication is key, our Multilingual Assistance service offers 
                                     the support you need to feel confident and understood throughout your journey. Our team is 
                                     fluent in both English and French, allowing us to bridge any language gap and provide truly 
                                     personalized assistance wherever you are..</p>
-                                <a href="contact.html" class="btn btn-light mt-3">Contact Us</a>
+                                <a data-translate="service_item_5_btn" href="contact.html" class="btn btn-light mt-3">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -404,12 +389,15 @@
     <!-- loader -->
     <div id="my_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/headerAndFooter.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/translate.js"></script>
+ 
 
     <script>
         
