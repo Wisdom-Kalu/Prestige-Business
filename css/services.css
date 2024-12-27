@@ -124,8 +124,8 @@ Top Header Logo Area
     
     @media (max-width: 768px) {
         .logo-image {
-            width: 140px;
-            max-height: 110px;
+            width: 200px;
+            max-height: 200px;
         }
     }
     
