@@ -885,6 +885,7 @@ Service listing Section
     }
 }
 
+
 /* Initially hidden for mobile */
 .all-card-content {
     height: 0;
@@ -894,8 +895,8 @@ Service listing Section
 
 /* Visible class for scroll effect on mobile */
 .all-card-content.visible {
-    height: 85%;
-    transition: height 0.7s ease;
+    height: 50%; /* to adjust the height of the overlay on mobile */
+    transition: height 0.9s ease; /* to adjust the speed of the overlay transition on mobile */
 }
 
 /* =====responsive===== */
