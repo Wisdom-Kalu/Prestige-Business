@@ -201,6 +201,12 @@ nav .navbar-nav .nav-item .nav-link:hover {
         color: var(--color-1) !important;
         
     }
+
+    .dropdown-menu a {
+        color: var(--color-1);
+        font-size: medium;
+    }
+
 }
 
 
