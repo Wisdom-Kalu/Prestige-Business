@@ -21,12 +21,12 @@ class PrestigeHeader extends HTMLElement {
                     <!-- Toggle button for Offcanvas (only shown on small screens) -->
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button>   
 
                     <!-- Offcanvas and Navbar Collapse for larger screens -->
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Prestige</h5>
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Prestige Business Travel</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
