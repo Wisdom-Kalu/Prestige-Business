@@ -117,10 +117,10 @@ class PrestigeFooter extends HTMLElement{
                 <div class="col-md-4 mb-4">
                     <h5 data-translate="quick_links_title" class="text-uppercase" style="color: var(--accent-color);">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li data-translate="quick_link_home"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
-                        <li data-translate="quick_link_about_us"><a href="about-us.html" class="text-light text-decoration-none">About Us</a></li>
-                        <li data-translate="quick_link_services"><a href="business-travel.html" class="text-light text-decoration-none">Services</a></li>
-                        <li data-translate="quick_link_contact"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="index.html" class="text-light text-decoration-none" data-translate="quick_link_home">Home</a></li>
+                        <li><a href="about-us.html" class="text-light text-decoration-none" data-translate="quick_link_about_us">About Us</a></li>
+                        <li><a href="business-travel.html" class="text-light text-decoration-none" data-translate="quick_link_services">Services</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none" data-translate="quick_link_contact">Contact</a></li>
                     </ul>
                 </div>
 
