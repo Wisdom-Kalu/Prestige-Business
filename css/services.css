@@ -607,6 +607,14 @@ Homepage: Our Promise
     border-radius: 10px !important;
 }
 
+.toppest {
+    width: 100%;
+    height: 200px !important; /* Adjust this as needed */
+    object-fit: fill !important; /* Special to one element, in order to see the image well */
+    border: none !important;
+    border-radius: 10px !important;
+}
+
 .card {
     border-radius: 10px !important;
     background: var(--black-color);
