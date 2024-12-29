@@ -129,8 +129,12 @@ class PrestigeFooter extends HTMLElement{
                 <div class="col-md-4 mb-4">
                     <h5 data-translate="social_media_title" class="text-uppercase" style="color: var(--accent-color);">Follow Us</h5>
                     <div class="social-icons">
+                        <!-- Instagram Icon -->
+                        <a href="https://www.instagram.com/prestigebusinesstravel/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40" height="40">
+                        </a>
                         <!-- Facebook Icon -->
-                        <a href="#" target="">
+                        <a href="https://www.instagram.com/prestigebusinesstravel/" target="_blank">
                             <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" width="40" height="40">
                         </a>
                 
@@ -142,11 +146,6 @@ class PrestigeFooter extends HTMLElement{
                         <!-- LinkedIn Icon -->
                         <a href="#" target="">
                             <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" width="40" height="40">
-                        </a>
-                
-                        <!-- Instagram Icon -->
-                        <a href="#" target="">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40" height="40">
                         </a>
                     </div>
             
