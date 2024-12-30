@@ -76,6 +76,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    background-color: var(--color-1);
+}
+
 @media (max-width: 1024px) {
 
     h1 {
