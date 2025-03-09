@@ -1,3 +1,4 @@
+
 class PrestigeHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -95,6 +96,7 @@ class PrestigeHeader extends HTMLElement {
 
 
 class PrestigeFooter extends HTMLElement{
+    
     connectedCallback() {
         this.innerHTML = 
         `
@@ -155,7 +157,7 @@ class PrestigeFooter extends HTMLElement{
             <!-- Copyright Section -->
             <div class="text-center mt-4">
                 <hr class="bg-light">
-                <p data-translate="copyright_text" class="mb-0">&copy; 2024 Prestige Business Travel. All Rights Reserved.</p>
+                <p data-translate="copyright_text" class="mb-0">&copy; <span id="year">${new Date().getFullYear()}</span> Prestige Business Travel. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -164,17 +166,6 @@ class PrestigeFooter extends HTMLElement{
         `
     }
 } 
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -302,7 +293,7 @@ class SpecialFooter extends HTMLElement{
         <!-- Copyright Section -->
         <div class="text-center mt-4">
             <hr class="bg-light">
-            <p class="mb-0">&copy; 2024 Prestige Business Travel. All Rights Reserved.</p>
+            <p class="mb-0">&copy; <span id="year">${new Date().getFullYear()}</span> Prestige Business Travel. All Rights Reserved.</p>
         </div>
     </div>
 </footer>
